@@ -1,0 +1,64 @@
+// Icon Fonts
+@font-face {
+  font-family: "Genericons-Neue";
+  src: url("./genericons-neue/Genericons-Neue.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@import "./genericons-neue/Genericons-Neue";
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Responsive Grid Layout Of Page
+@import "_layout";
+
+// Global Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 10px;
+  position: relative;
+  color: black;
+}
+
+article {
+  padding-bottom: 20px;
+}
+
+.font-roboto {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 481px) {
+  .font-medium {
+    font-size: 18px;
+  }
+}
+
+.section-title {
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  color: rgba(3, 3, 3, 0.4);
+  text-transform: uppercase;
+  padding-bottom: 11px;
+}
