@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "parcel index.pug --no-source-maps",
-    "build": "parcel build index.pug --experimental-scope-hoisting --no-content-hash",
+    "build": "parcel build index.pug --experimental-scope-hoisting --no-content-hash  --public-url ./",
     "format": "./node_modules/.bin/prettier --write source/**/**/*.scss source/**/**/*.pug"
   },
   "devDependencies": {
