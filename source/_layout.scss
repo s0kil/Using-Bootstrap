@@ -1,0 +1,20 @@
+// Mixins
+@import "_mixins";
+// Header
+@import "partials/header";
+
+// Main Layout
+@import "partials/top-story";
+@import "partials/latest-news";
+@import "partials/more-stories";
+@import "partials/culture-travel";
+@import "partials/featured-stories";
+
+main {
+  padding-top: 20px;
+
+  grid-template-areas:
+    ""
+    ""
+    "";
+}

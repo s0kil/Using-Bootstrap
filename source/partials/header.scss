@@ -1,0 +1,52 @@
+$red: #f72210;
+
+.header-middle {
+  background: $red;
+}
+
+.header-brand svg {
+  display: block;
+  fill: white;
+  width: 132px;
+  height: 20px;
+}
+
+.header-bottom {
+  display: none;
+}
+
+.menu-icon {
+  color: #fb9a94;
+  font-size: 25px;
+}
+
+.header-action {
+  color: white;
+  margin-right: 0.2rem;
+  text-transform: uppercase;
+}
+
+.header-action-subscribe {
+  color: $red;
+  background: white;
+  text-transform: uppercase;
+  padding: 0.4em 0.2em;
+}
+
+.header-action-subscribe .arrow {
+  display: none;
+  font-size: 18px;
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 481px) {
+  .header-action-subscribe .arrow {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-bottom {
+    display: block;
+  }
+}

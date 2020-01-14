@@ -1,0 +1,24 @@
+// Include Mixins
+include _mixins
+// Include Header
+include partials/header
+
+// Main Layout
+main.container-fluid
+  div(style={ 'grid-area': 'top-story' })
+    include partials/top-story
+
+  div(style={ 'grid-area': 'more-stories' })
+    include partials/more-stories
+
+  div(style={ 'grid-area': 'culture-travel' })
+    //include partials/culture-travel
+
+  div(style={ 'grid-area': 'featured-stories' })
+    //include partials/featured-stories
+
+  div(style={ 'grid-area': 'opinions' })
+    //include partials/opinions
+
+  div(style={ 'grid-area': 'latest-news' })
+    //include partials/latest-news

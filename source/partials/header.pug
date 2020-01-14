@@ -1,0 +1,25 @@
+header.page-header
+  .header-top
+
+  .header-middle.d-flex
+    .pt-3.pl-3.pb-3
+      a(href="/").header-brand
+        span.header-brand
+          include ../assets/brand-logo.svg
+
+    .col.p-0.d-flex.align-items-center.justify-content-end
+      a(href="/").font-roboto.font-bold.font-medium.font-14.header-action Sign In
+      a(href="/").font-roboto.font-bold.font-medium.font-14.header-action-subscribe Subscribe
+        span.arrow.genericons-neue.genericons-neue-collapse
+      span.menu-icon.genericons-neue.genericons-neue-menu.m-2
+
+  nav.header-bottom
+  div
+    ul.page-nav.list-group.list-group-horizontal
+      each navItem in ["U.S.", "World", "Business", "Tech & Science", "Culture", "Newsgeek", "Sports", "Health", "The Debate", "Vantage"]
+        li.nav-item.list-group-item.d-none.d-xl-block
+          a(href="/")= navItem
+
+    form(action="/", method="post").d-none.d-xl-block
+      label(for="search")
+        input#search(type="text")
