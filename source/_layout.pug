@@ -4,7 +4,7 @@ include _mixins
 include partials/header
 
 // Main Layout
-main.container-fluid
+main.container-fluid.pt-4
   div(style={ 'grid-area': 'top-story' })
     include partials/top-story
 
@@ -12,13 +12,13 @@ main.container-fluid
     include partials/more-stories
 
   div(style={ 'grid-area': 'culture-travel' })
-    //include partials/culture-travel
+    include partials/culture-travel
 
   div(style={ 'grid-area': 'featured-stories' })
-    //include partials/featured-stories
+    include partials/featured-stories
 
-  div(style={ 'grid-area': 'opinions' })
-    //include partials/opinions
+  div(style={ 'grid-area': 'opinion' })
+    include partials/opinion
 
   div(style={ 'grid-area': 'latest-news' })
-    //include partials/latest-news
+    include partials/latest-news

@@ -1,0 +1,17 @@
+.latest-news {
+  & :not(:last-child).separator {
+    border-top: 1px solid #ddd;
+  }
+}
+
+.latest-news-image {
+  & img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+  }
+}
+
+.latest-news-title {
+  font: bold 17px/21px "Roboto Condensed", sans-serif;
+}

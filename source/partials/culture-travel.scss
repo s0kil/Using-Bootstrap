@@ -1,0 +1,41 @@
+.culture-travel {
+  background-color: #f4f5f7;
+
+  & .block-title {
+    color: rgba(3, 3, 3, 0.5);
+    padding: 10px;
+  }
+}
+
+.culture-travel-card {
+  padding: 15px 10px 20px;
+}
+
+.culture-travel-article-title {
+  & h5 {
+    font: 20px/22px "Lora", serif;
+    color: #272727;
+  }
+}
+
+.culture-travel-article-summary {
+  font: 15px/20px "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  color: rgba(39, 39, 39, 0.5);
+  margin-bottom: 10px;
+}
+
+.culture-travel-article-tags {
+  font: 300 13px/20px "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  background-color: #c2d4d7;
+  display: inline-block;
+  color: #272727;
+
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+
+  & p {
+    margin: 0;
+  }
+}

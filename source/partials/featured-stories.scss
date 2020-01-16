@@ -1,0 +1,19 @@
+.featured-story {
+  & .sponsored {
+    & .overlay-content {
+      color: #3581f4;
+    }
+  }
+}
+
+.featured-story-image {
+  & img {
+    width: 100%;
+    height: 62vw;
+    object-fit: cover;
+  }
+}
+
+.featured-story-info {
+  border: 1px solid #e6e6e6;
+}

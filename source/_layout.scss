@@ -4,17 +4,52 @@
 @import "partials/header";
 
 // Main Layout
+@import "partials/opinion";
 @import "partials/top-story";
 @import "partials/latest-news";
 @import "partials/more-stories";
 @import "partials/culture-travel";
 @import "partials/featured-stories";
 
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;
+
 main {
-  padding-top: 20px;
+  display: grid;
 
   grid-template-areas:
-    ""
-    ""
-    "";
+    "top-story"
+    "more-stories"
+    "culture-travel"
+    "featured-stories"
+    "opinion"
+    "latest-news";
+
+  @media screen and (min-width: $medium) {
+    grid-template-areas:
+      "featured-stories top-story"
+      "featured-stories culture-travel"
+      "featured-stories more-stories"
+      "opinion opinion"
+      "latest-news latest-news";
+  }
+
+  @media screen and (min-width: $large) {
+    grid-template-columns:
+      [featured-stories top-story opinion] 30% 40% 30%
+      [featured-stories culture-travel latest-news] 30% 40% 30%
+      [featured-stories more-stories latest-news] 30% 40% 30%;
+
+    grid-template-rows:
+      [featured-stories top-story opinion] 1fr 100% 100%
+      [featured-stories culture-travel latest-news] 1fr 100% 100%
+      [featured-stories more-stories latest-news] 1fr 100% 100%;
+
+    grid-template-areas:
+      "featured-stories top-story opinion"
+      "featured-stories culture-travel latest-news"
+      "featured-stories more-stories latest-news";
+  }
 }

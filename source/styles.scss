@@ -7,6 +7,9 @@
 }
 @import "./genericons-neue/Genericons-Neue";
 
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+
 // Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -24,6 +27,11 @@ h6 {
   margin-bottom: 10px;
   position: relative;
   color: black;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 20px;
 }
 
 article {
@@ -61,4 +69,11 @@ article {
   color: rgba(3, 3, 3, 0.4);
   text-transform: uppercase;
   padding-bottom: 11px;
+}
+
+.block-title {
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+  color: rgba(12, 11, 11, 0.8);
 }

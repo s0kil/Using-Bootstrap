@@ -1,0 +1,42 @@
+-
+  const articles = [
+    {
+      tags: "Star Wars",
+      title: "Relive the 'Star Wars' Saga at These Filming Locations",
+      image: "https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg",
+      summary: "From actual filming locations to space-themed destinations, sure to please even those who aren't die hard 'Star Wars' fans, keep the saga going with these 'Star Wars' destinations around the world.",
+    },
+    {
+      tags:"meteor shower",
+      title: "Follow the Stars for These Must-See Celestial Events of 2020",
+      image: "https://d.newsweek.com/en/full/1557807/sedona-arizona.jpg",
+      summary: "From spectacular meteor showers to rare eclipses, these are the best times to plan a stargazing vacation spent under the night sky."
+    },
+    {
+      tags: "Travel",
+      title: "What Travelers Should Know About Australia Wildfires (and How to Help)",
+      image: "https://d.newsweek.com/en/full/1558578/smoke-australia.jpg",
+      summary: "As devastating wildfires continue to burn across Australia, the priority is on emergency response. But for long-term recovery, tourism will play a vital role."
+    },
+    {
+      tags: "Travel",
+      title: "Airport Restaurants Worthy of a Layover",
+      image: "https://d.newsweek.com/en/full/1556716/twa-hotel.jpg",
+      summary: "We're living in a golden age of airport dining. Enjoy an epicurean feast at the airport before your flight and smugly pass on the chicken or pasta option on board the plane."
+    }
+  ]
+  
+.culture-travel
+  .block-title Culture & Travel
+
+  each article in articles
+    .culture-travel-article
+      .culture-travel-article-image
+        img(src=article.image).img-fluid
+      .culture-travel-card
+        .culture-travel-article-title
+          h5.mb-2= article.title
+        .culture-travel-article-summary
+          p= article.summary
+        .culture-travel-article-tags
+          p= article.tags

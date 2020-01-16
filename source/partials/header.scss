@@ -13,6 +13,10 @@ $red: #f72210;
 
 .header-bottom {
   display: none;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+  }
 }
 
 .menu-icon {
@@ -31,22 +35,16 @@ $red: #f72210;
   background: white;
   text-transform: uppercase;
   padding: 0.4em 0.2em;
-}
 
-.header-action-subscribe .arrow {
-  display: none;
-  font-size: 18px;
-  transform: rotate(90deg);
-}
-
-@media screen and (min-width: 481px) {
-  .header-action-subscribe .arrow {
-    display: inline-block;
+  & .arrow {
+    display: none;
+    font-size: 18px;
+    transform: rotate(90deg);
   }
-}
 
-@media screen and (min-width: 992px) {
-  .header-bottom {
-    display: block;
+  @media screen and (min-width: 481px) {
+    & .arrow {
+      display: inline-block;
+    }
   }
 }

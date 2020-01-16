@@ -2,15 +2,17 @@
   border-top: 1px solid #ddd;
 }
 
-.more-stories-image img {
-  max-height: 25vw;
-  width: 100%;
+.more-stories-image {
+  float: left;
+
+  & img {
+    max-height: 25vw;
+    width: 40vw;
+    object-fit: cover;
+  }
 }
 
 .more-stories-title {
   font-size: 17px;
   line-height: 20px;
-}
-
-.more-stories-summary {
 }
