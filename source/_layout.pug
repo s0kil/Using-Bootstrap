@@ -3,22 +3,57 @@ include _mixins
 // Include Header
 include partials/header
 
+// TODO : Use Bootstrap Grid For Layout, And Order Items On Various Viewports
+
 // Main Layout
 main.container-fluid.pt-4
-  div(style={ 'grid-area': 'top-story' })
+  section
     include partials/top-story
 
-  div(style={ 'grid-area': 'more-stories' })
+  section
     include partials/more-stories
 
-  div(style={ 'grid-area': 'culture-travel' })
+  section
     include partials/culture-travel
 
-  div(style={ 'grid-area': 'featured-stories' })
+  section
     include partials/featured-stories
 
-  div(style={ 'grid-area': 'opinion' })
+  section
     include partials/opinion
 
-  div(style={ 'grid-area': 'latest-news' })
+  section
     include partials/latest-news
+
+  section
+    // Sponsored Insight
+    // Sign Up
+    // Sponsored Insight
+    // Sponsored Insight
+    // Monthly Issue
+
+  section
+    // In The Magazine
+
+  section
+    // Newsweek Conversations
+
+  section
+    // Editors Pick
+
+  section
+    // Featured Slideshows
+
+  section
+    // U.S.
+    // World
+    // Business
+    // Tech & Science
+    // Culture
+    // Sports
+
+  section
+    // Subscribe
+    // Newsletter
+
+// Import Footer
