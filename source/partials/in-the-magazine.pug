@@ -1,0 +1,51 @@
+-
+  const magazineArticles = [
+    {
+      title: "Black China: Africa's First Superpower Is Coming Sooner Than You Think",
+      image: "https://d.newsweek.com/en/full/1559646/fe-nigeria-01-523787136-banner.jpg",
+      categories: ["Cover", "World"],
+    },
+    {
+      title: "The Iran Crisis Comes With Serious Risks for America's Economy",
+      image: "https://d.newsweek.com/en/full/1559668/fe-iran-01-1192553955-banner.jpg",
+      categories: ["Features", "World"],
+    },
+    {
+      title: "Got Holiday Debt? Pay Off Your Credit Cards Quickly with These 5 Tips",
+      image: "https://d.newsweek.com/en/full/1558983/wirecutter-credit-card-debt.jpg",
+      categories: ["Periscope", "Business"],
+    },
+    {
+      title: "Meghan Markle Being a Black Woman in Royal Family Was Never Going to Work",
+      image: "https://d.newsweek.com/en/full/1559784/per-meghanmarklemutiny-1198091143-banner.jpg",
+      categories: ["Periscope", "Culture"],
+    },
+    {
+      title: "Historian Anne de Courcy on What We Can Learn From Coco Chanel",
+      image: "https://d.newsweek.com/en/full/1559828/cul-chanelqanda-56226855-banner.jpg",
+      categories: ["Downtime", "Culture"],
+    },
+    {
+      title: "Women Changemakers of the Last Century",
+      image: "https://d.newsweek.com/en/full/1559766/cul-map-1097506118-banner.jpg",
+      categories: ["Downtime", "Culture"],
+    },
+    {
+      title: "Night Terror",
+      image: "https://d.newsweek.com/en/full/1559861/night-terror.jpg",
+      categories: ["In Focus"],
+    }
+  ]
+
+// TODO Title : IN THE MAGAZINE
+.magazine-articles
+  each article in magazineArticles
+    .magazine-article
+      .magazine-article-image
+        img(src=article.image).img-fluid
+        span.magazine-article-image-overlay= article.categories.shift()
+      .magazine-article-categories.mt-2.mb-1
+        each category in article.categories
+          span.magazine-article-category= category
+      .magazine-article-title
+        h5.font-16= article.title

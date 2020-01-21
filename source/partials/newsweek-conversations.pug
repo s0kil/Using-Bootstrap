@@ -1,0 +1,52 @@
+-
+  const newsweekConversationsTop = {
+    title: "The Vampire Diaries' Paul Wesley Talks Fame, Directing and CBS' 'Tell Me a Story'",
+    image: "https://d.newsweek.com/en/full/1555347/newsweek-conversations-paul-wesley.jpg",
+    summary: "\"I try my best not to drink the Kool-Aid too much, because that can be a slippery slope,\" Paul Wesley said about dealing with fame.",
+    time: "20:00"
+  }
+
+  const newsweekConversations = [
+    {
+      title: "'American Horror Story's' Leslie Grossman Is the Definition of a Great Hollywood Character Actress",
+      image : "https://d.newsweek.com/en/full/1555350/newsweek-conversations-leslie-grossman.jpg",
+      time: "21:04"
+    },
+    {
+      title: "Newsweek Conversations with Actor Willem Dafoe",
+      image : "https://d.newsweek.com/en/full/1555351/newsweek-conversations-willem-dafoe.jpg",
+      time: "20:49"
+    },
+    {
+      title: "‘Stranger Things’ Star Matthew Modine On New Movie ‘Miss Virginia’",
+      image : "https://d.newsweek.com/en/full/1555352/newsweek-conversations-matthew-modine.jpg",
+      time: "17:39"
+    }
+  ];
+
+// TODO : Section Title "NEWSWEEK CONVERSATIONS"
+.newsweek-conversations
+  .newsweek-conversation-top
+    .newsweek-conversation-top-image
+      img.img-fluid(src=newsweekConversationsTop.image)
+      .overlayContent
+        span.play-icon.play-icon-large.genericons-neue.genericons-neue-play
+    .newsweek-conversation-top-details.p-3
+      .newsweek-conversation-top-title
+        h3= newsweekConversationsTop.title
+      .newsweek-conversation-top-summary.mb-2
+        summary= newsweekConversationsTop.summary
+      .newsweek-conversation-top-time
+        time= newsweekConversationsTop.time
+
+  each conversation in newsweekConversations
+    .newsweek-conversation.conversation-border.row.align-items-center
+      .newsweek-conversation-image.col-6
+        img.img-fluid(src=conversation.image)
+        .overlayContent
+          span.play-icon.play-icon-small.genericons-neue.genericons-neue-play
+      .newsweek-conversation-details.col.p-3
+        .newsweek-conversation-title
+          h4.mb-0= conversation.title
+        .newsweek-conversation-time
+          time= conversation.time

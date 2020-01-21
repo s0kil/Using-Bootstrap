@@ -20,7 +20,7 @@
     "format": "./node_modules/.bin/prettier --write source/**/**/*.scss source/**/**/*.pug"
   },
   "devDependencies": {
-    "@prettier/plugin-pug": "^1.1.4",
+    "@prettier/plugin-pug": "^1.1.5",
     "bootstrap": "^4.4.1",
     "genericons-neue": "^4.0.5",
     "jquery": "^3.4.1",

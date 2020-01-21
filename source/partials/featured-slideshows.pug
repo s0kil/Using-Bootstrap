@@ -1,0 +1,45 @@
+-
+  const featuredSlideshows = [
+    {
+      title: "Relive the 'Star Wars' Saga at These Filming Locations",
+      image: "https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg",
+      slideshowCount: 11
+    },
+    {
+      title: "Inside the Last Bohemian Apartments of the Storied Hotel Chelsea",
+      image: "https://d.newsweek.com/en/full/1547486/lipschutz-living-room-hotel-chelsea.jpg",
+      slideshowCount: 12
+    },
+    {
+      title: "A Look at Every Starbucks Winter Holiday Cup By Year from 1997 to 2019",
+      image: "https://d.newsweek.com/en/full/1543106/2018-cup-collection.jpg",
+      slideshowCount: 25
+    },
+    {
+      title: "What Starbucks Christmas Holiday Drinks Are Available This Year?",
+      image: "https://d.newsweek.com/en/full/1542741/holiday-cups-starbucks.jpg",
+      slideshowCount: 19
+    },
+    {
+      title: "Meet the Master Carver Who Turns Pumpkins Into Portraits",
+      image: "https://d.newsweek.com/en/full/1539646/first-wives-club-pumpkin.jpg",
+      slideshowCount: 12
+    },
+    {
+      title: "Our Cosplay Favorites from NYCC 2019",
+      image: "https://d.newsweek.com/en/full/1534277/nycc-2019-best-cosplay-augustus-st-cloud.jpg",
+      slideshowCount: 40
+    }
+  ]
+
+// TODO Section Title "FEATURED SLIDESHOWS"
+hr
+.featured-slideshows
+  each slideshow in featuredSlideshows
+    .featured-slideshow.pb-5
+      .featured-slideshow-image.position-relative.mb-4
+        img.img-fluid(src=slideshow.image)
+        .overlayContent
+          span.slideshow-count= slideshow.slideshowCount
+      .featured-slideshow-title
+        h4.font-18= slideshow.title
