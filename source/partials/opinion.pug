@@ -31,13 +31,13 @@
       headShotImage: "https://d.newsweek.com/en/full/1559723/beatrice-maneshi.png"
     }
   ]
-
+  
 .section-title OPINION
 .opinion-articles
   each opinion in opinions
     .opinion-article.row.pb-3
       .opinion-article-image.col-3
-        img(src=opinion.headShotImage).img-fluid.rounded
+        img.img-fluid.rounded(src=opinion.headShotImage)
       .col.p-0
         .opinion-article-title= opinion.title
         .opinion-article-author= opinion.author

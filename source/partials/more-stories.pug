@@ -51,12 +51,12 @@
       summary: "Canada, Ukraine, Sweden, Afghanistan and Britain are expected to meet to discuss an investigation into the incident."
     }
   ]
-
+  
 .section-title More Stories
 each article in featured
   article.more-stories.pt-3.pb-0
     .more-stories-image.pr-1.mr-2
-      img(src=article.image, loading="lazy").img-fluid
+      img.img-fluid(src=article.image, loading="lazy")
     .more-stories-title.pl-1
       p.more-stories-title.font-roboto.mb-0= article.title
     .more-stories-summary.pt-2

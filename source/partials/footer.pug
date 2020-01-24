@@ -1,0 +1,50 @@
+-
+  const footerEditions = [
+    "U.S Edition",
+    "日本",
+    "Pakistan",
+    "Polska",
+    "România"
+  ]
+
+  const footerSiteMap = [
+    "About Us",
+    "Corrections",
+    "Contact Us",
+    "Editorial Guidelines",
+    "Advertise",
+    "Copyright",
+    "Terms & Conditions",
+    "Privacy Policy",
+    "Cookie Policy",
+    "Terms of Sale",
+    "Archive",
+    "Announcements",
+    "Consent preferences"
+  ]
+
+footer.footer.container-fluid.mb-4
+  .footer-border.pb-4
+  .footer-logo.mb-2
+    include ../assets/brand-logo.svg
+  .footer-copyright.mb-2
+    span &copy; 2020 Newsweek
+  .footer-social.d-flex
+    .footer-social-icon.mr-3
+      include ../../node_modules/simple-icons/icons/facebook.svg
+    .footer-social-icon.mr-3
+      include ../../node_modules/simple-icons/icons/twitter.svg
+    .footer-social-icon.mr-3
+      include ../../node_modules/simple-icons/icons/instagram.svg
+    .footer-social-icon.mr-3
+      include ../../node_modules/simple-icons/icons/linkedin.svg
+  hr
+  .footer-editions.row
+    .col-3.pr-0
+      strong.mt-1.d-block Editions:
+    .col-8.pl-0
+       for edition in footerEditions
+         p.pr-3.mt-1.mb-1.d-inline-block= edition
+  .footer-sitemap
+    for siteLink in footerSiteMap
+      p.font-14.pr-3.mt-1.mb-1.d-inline-block= siteLink

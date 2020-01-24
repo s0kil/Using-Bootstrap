@@ -1,0 +1,23 @@
+.footer-border {
+  border-top: 2px solid #f4f5f6;
+}
+
+.footer-logo {
+  & svg {
+    display: block;
+    width: 236px;
+    height: 36px;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    fill: #f72210;
+  }
+}
+
+.footer-social-icon {
+  & svg {
+    fill: #666;
+    $size: 25px;
+    height: $size;
+    width: $size;
+  }
+}

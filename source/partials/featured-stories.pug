@@ -57,13 +57,13 @@
       sponsored: true,
     }
   ]
-
+  
 .section-title.pt-5 FEATURED STORIES
 .featured-stories
   each story in featuredStories
     .featured-story.pb-4
       .featured-story-image.position-relative
-        img(src=story.image).img-fluid
+        img.img-fluid(src=story.image)
         if story.sponsored
           .sponsored
             +overlayContent(story.category)

@@ -29,13 +29,13 @@
       image: "https://d.newsweek.com/en/full/1560344/bernie-sanders-holds-town-hall-iowa.jpg"
     }
   ]
-
+  
 .section-title LATEST NEWS
 .latest-news
   each article in latestNews
     .latest-news-article.row.pb-2
       .latest-news-image.col-5
-        img(src=article.image).img-fluid
+        img.img-fluid(src=article.image)
       .latest-news-title.col.p-0
         p= article.title
     .separator.pt-2

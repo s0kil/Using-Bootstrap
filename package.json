@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "parcel index.pug --no-source-maps",
-    "build": "parcel build index.pug --experimental-scope-hoisting --no-content-hash  --public-url ./",
+    "build": "parcel build index.pug --experimental-scope-hoisting --no-content-hash --public-url ./",
     "format": "./node_modules/.bin/prettier --write source/**/**/*.scss source/**/**/*.pug"
   },
   "devDependencies": {
@@ -26,8 +26,9 @@
     "jquery": "^3.4.1",
     "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.4",
-    "popper.js": "^1.16.0",
+    "popper.js": "^1.16.1",
     "prettier": "^1.19.1",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "simple-icons": "^2.3.0"
   }
 }

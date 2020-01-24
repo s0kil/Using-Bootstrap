@@ -36,13 +36,13 @@
       categories: ["In Focus"],
     }
   ]
-
+  
 // TODO Title : IN THE MAGAZINE
 .magazine-articles
   each article in magazineArticles
     .magazine-article
       .magazine-article-image
-        img(src=article.image).img-fluid
+        img.img-fluid(src=article.image)
         span.magazine-article-image-overlay= article.categories.shift()
       .magazine-article-categories.mt-2.mb-1
         each category in article.categories

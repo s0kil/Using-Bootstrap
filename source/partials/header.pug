@@ -3,13 +3,15 @@ header.page-header
 
   .header-middle.d-flex
     .pt-3.pl-3.pb-3
-      a(href="/").header-brand
+      a.header-brand(href="/")
         span.header-brand
           include ../assets/brand-logo.svg
 
     .col.p-0.d-flex.align-items-center.justify-content-end
-      a(href="/").font-roboto.font-bold.font-medium.font-14.header-action Sign In
-      a(href="/").font-roboto.font-bold.font-medium.font-14.header-action-subscribe Subscribe
+      a.font-roboto.font-bold.font-medium.font-14.header-action(href="/") Sign In
+      a.font-roboto.font-bold.font-medium.font-14.header-action-subscribe(
+        href="/"
+      ) Subscribe
         span.arrow.genericons-neue.genericons-neue-collapse
       span.menu-icon.genericons-neue.genericons-neue-menu.m-2
 
@@ -20,6 +22,6 @@ header.page-header
         li.nav-item.list-group-item.d-none.d-xl-block
           a(href="/")= navItem
 
-    form(action="/", method="post").d-none.d-xl-block
+    form.d-none.d-xl-block(action="/", method="post")
       label(for="search")
         input#search(type="text")
