@@ -17,7 +17,19 @@
   "scripts": {
     "start": "parcel index.pug --no-source-maps",
     "build": "parcel build index.pug --experimental-scope-hoisting --no-content-hash --public-url ./",
-    "format": "./node_modules/.bin/prettier --write source/**/**/*.scss source/**/**/*.pug"
+    "format": "./node_modules/.bin/prettier --write source/**/*.scss source/**/*.pug"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-remove-unused-css": {
+        "path": "./source",
+        "exts": [
+          ".js",
+          ".html",
+          ".pug"
+        ]
+      }
+    }
   },
   "devDependencies": {
     "@prettier/plugin-pug": "^1.2.0",
@@ -27,7 +39,10 @@
     "jquery": "^3.4.1",
     "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^1.19.1",
+    "parcel-plugin-purifycss": "^1.0.5",
+    "postcss": "^7.0.27",
+    "postcss-remove-unused-css": "^1.0.4",
+    "prettier": "^2.0.2",
     "pug": "^2.0.4",
     "simple-icons": "^2.8.0"
   }
