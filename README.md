@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/s0kil/Using-Bootstrap/Features/dist/index.html)
+[Live Demo Link](https://s0kil-using-bootstrap.netlify.com)
 
 ## Tools Used
 
@@ -48,3 +48,7 @@ Contributions, issues and feature requests are welcome!
 👤 Daniel Sokil
 
 - Github: [@s0kill](https://github.com/s0kil)
+
+#### Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/db419034-12e2-4dab-8366-e09824761152/deploy-status)](https://app.netlify.com/sites/s0kil-using-bootstrap/deploys)
