@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "s0kil",
   "license": "MIT",
-  "homepage": "https://github.com/s0kil/Using-Bootstrap#readme",
+  "homepage": "https://github.com/s0kil/Using-Bootstrap",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/s0kil/Using-Bootstrap.git"
@@ -20,15 +20,15 @@
     "format": "./node_modules/.bin/prettier --write source/**/**/*.scss source/**/**/*.pug"
   },
   "devDependencies": {
-    "@prettier/plugin-pug": "^1.1.5",
+    "@prettier/plugin-pug": "^1.2.0",
     "bootstrap": "^4.4.1",
+    "cssnano": "^4.1.10",
     "genericons-neue": "^4.0.5",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.4",
-    "popper.js": "^1.16.1",
     "prettier": "^1.19.1",
     "pug": "^2.0.4",
-    "simple-icons": "^2.3.0"
+    "simple-icons": "^2.8.0"
   }
 }
