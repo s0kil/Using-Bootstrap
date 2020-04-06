@@ -2,7 +2,7 @@
 @import "_mixins";
 // Header
 @import "partials/header";
-//Footer
+// Footer
 @import "partials/footer";
 
 // Main Layout
@@ -17,6 +17,11 @@
 @import "partials/featured-slideshows";
 @import "partials/newsweek-conversations";
 
+body {
+  margin: auto;
+  max-width: 1310px;
+}
+
 main {
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) {
@@ -29,30 +34,54 @@ main {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
     grid-template-rows: repeat(10, minmax(100px, auto));
     grid-template-areas:
-      /* 1 */
+      // 1
       "featured-stories top-story"
-      /* 2 */
+      // 2
       "featured-stories culture-travel"
-      /* 3 */
+      // 3
       "featured-stories more-stories"
-      /* 4 */
+      // 4
       "opinion opinion"
-      /* 5 */
+      // 5
       "latest-news latest-news"
-      /* 6 */
+      // 6
       "in-the-magazine in-the-magazine"
-      /* 7 */
+      // 7
       "newsweek-conversations newsweek-conversations"
-      /* 8 */
+      // 8
       "editors-pick editors-pick"
-      /* 9 */
+      // 9
       "featured-slideshows featured-slideshows"
-      /* 10 */
+      // 10
       ". .";
   }
 
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(10, minmax(100px, auto));
+    grid-template-areas:
+      // 1
+      "featured-stories top-story opinion"
+      // 2
+      "featured-stories culture-travel opinion"
+      // 3
+      "featured-stories culture-travel latest-news"
+      // 4
+      "featured-stories more-stories latest-news"
+      // 5
+      "in-the-magazine in-the-magazine in-the-magazine"
+      // 6
+      "newsweek-conversations newsweek-conversations newsweek-conversations"
+      // 7
+      "editors-pick editors-pick editors-pick"
+      // 8
+      "featured-slideshows featured-slideshows featured-slideshows"
+      // 9
+      ". . ."
+      // 10
+      ". . .";
   }
 
   // Extra large devices (large desktops, 1200px and up)
