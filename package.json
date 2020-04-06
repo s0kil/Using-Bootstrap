@@ -15,35 +15,18 @@
     "url": "https://github.com/s0kil/Using-Bootstrap/issues"
   },
   "scripts": {
-    "start": "parcel index.pug --no-source-maps",
-    "build": "parcel build index.pug --experimental-scope-hoisting --no-content-hash --public-url ./",
-    "format": "./node_modules/.bin/prettier --write source/**/*.scss source/**/*.pug"
-  },
-  "postcss": {
-    "plugins": {
-      "postcss-remove-unused-css": {
-        "path": "./source",
-        "exts": [
-          ".js",
-          ".html",
-          ".pug"
-        ]
-      }
-    }
+    "start": "parcel index.pug",
+    "build": "parcel build index.pug"
   },
   "devDependencies": {
-    "@prettier/plugin-pug": "^1.2.0",
+    "@fullhuman/postcss-purgecss": "^2.1.0",
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
     "genericons-neue": "^4.0.5",
     "jquery": "^3.4.1",
-    "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-purifycss": "^1.0.5",
-    "postcss": "^7.0.27",
-    "postcss-remove-unused-css": "^1.0.4",
-    "prettier": "^2.0.2",
     "pug": "^2.0.4",
+    "sass": "^1.26.3",
     "simple-icons": "^2.8.0"
   }
 }

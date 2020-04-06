@@ -2,7 +2,9 @@
 
 > Clone Of News Week Using Bootstrap 4
 
-## Live Demo
+## Live Demos
+
+[News Week Archive](https://web.archive.org/web/20200115024709if_/https://www.newsweek.com/)
 
 [Live Demo Link](https://s0kil-using-bootstrap.netlify.com)
 

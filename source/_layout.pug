@@ -1,60 +1,62 @@
-// Include Mixins
-include _mixins
-// Include Header
-include partials/header
+<!-- The (_layout.pug, _layout.scss) files define
+layout restrictions for each individual section (grid area) -->
 
-// TODO : Use Bootstrap Grid For Layout, And Order Items On Various Viewports
+// Preprocessor Mixins
+include _mixins
+// Header
+include partials/header
 
 // Main Layout
 main.container-fluid.pt-4
-  section
-    // Top Story
+  // Top Story
+  section(style={"grid-area": "top-story"})
     include partials/top-story
 
-  section
-    // More Stories
+  // More Stories
+  section(style={"grid-area": "more-stories"})
     include partials/more-stories
 
-  section
-    // Culture & Travel
+  // Culture & Travel
+  section(style={"grid-area": "culture-travel"})
     include partials/culture-travel
 
-  section
-    // Featured Stories
+  // Featured Stories
+  section(style={"grid-area": "featured-stories"})
     include partials/featured-stories
 
-  section
-    // Opinion
+  // Opinion
+  section(style={"grid-area": "opinion"})
     include partials/opinion
 
-  section
-    // Latest News
+  // Latest News
+  section(style={"grid-area": "latest-news"})
     include partials/latest-news
 
-  section
+  // TODO: Does Not Exist
+  section(style={"grid-area": ""})
     // Sponsored Insight
     // Sign Up
     // Sponsored Insight * 4
     // Monthly Issue
 
-  section
-    // In The Magazine
+  // In The Magazine
+  section(style={"grid-area": "in-the-magazine"})
     include partials/in-the-magazine
 
-  section
-    // Newsweek Conversations
+  // Newsweek Conversations
+  section(style={"grid-area": "newsweek-conversations"})
     include partials/newsweek-conversations
 
-  section
-    // Editors Pick
+  // Editors Pick
+  section(style={"grid-area": "editors-pick"})
     include partials/editors-pick
 
-  section
-    // Featured Slideshows
+  // Featured Slideshows
+  section(style={"grid-area": "featured-slideshows"})
     include partials/featured-slideshows
 
-  // Does Not Exist
-  section
+  // TODO: Does Not Exist
+  section(style={"grid-area": ""})
     // U.S.
     // World
     // Business
@@ -62,8 +64,10 @@ main.container-fluid.pt-4
     // Culture
     // Sports
 
-  section
+  // TODO: Does Not Exist
+  section(style={"grid-area": ""})
     // Subscribe
     // Newsletter
 
+// Footer
 include partials/footer
