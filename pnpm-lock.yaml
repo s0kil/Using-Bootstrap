@@ -1,12 +1,10 @@
 devDependencies:
   bootstrap: 4.4.1_jquery@3.5.0
   cssnano: 4.1.10
-  genericons-neue: 4.0.5
   jquery: 3.5.0
   parcel: 2.0.0-nightly.226
   pug: 2.0.4
   sass: 1.26.3
-  simple-icons: 2.9.0
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.8.3:
@@ -3540,10 +3538,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-LANAXHU4w51+s3sxcCLjJfsBi/c=
-  /genericons-neue/4.0.5:
-    dev: true
-    resolution:
-      integrity: sha1-jt4xg45atuWMyPhg52gKc8oc/0E=
   /gensync/1.0.0-beta.1:
     dev: true
     engines:
@@ -5996,10 +5990,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-bCR6cP+aTdScaQCnQKbPKtJOKDp/hj9EDLJo3Nw4y1QksqaovlW/bnptB6/c1e+qmNIDHRK+oXFDdEqBT8WzUA==
-  /simple-icons/2.9.0:
-    dev: true
-    resolution:
-      integrity: sha512-8ui67F65+ddyWjbo6lqUh2/dHWXkA4q36ms6dra+wWNrClpQoDzfWFyopUBrc3VZ7e1mDJ2boyPVxChlmIS+3Q==
   /simple-swizzle/0.2.2:
     dependencies:
       is-arrayish: 0.3.2
@@ -6817,9 +6807,7 @@ packages:
 specifiers:
   bootstrap: ^4.4.1
   cssnano: ^4.1.10
-  genericons-neue: ^4.0.5
   jquery: ^3.5.0
   parcel: ^2.0.0-nightly.226
   pug: ^2.0.4
   sass: ^1.26.3
-  simple-icons: ^2.9.0
