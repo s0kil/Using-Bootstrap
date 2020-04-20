@@ -15,7 +15,7 @@
     "url": "https://github.com/s0kil/Using-Bootstrap/issues"
   },
   "scripts": {
-    "start": "parcel index.pug",
+    "start": "parcel serve index.pug",
     "build": "parcel build index.pug"
   },
   "devDependencies": {
@@ -23,7 +23,7 @@
     "cssnano": "^4.1.10",
     "genericons-neue": "^4.0.5",
     "jquery": "^3.5.0",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0-nightly.226",
     "pug": "^2.0.4",
     "sass": "^1.26.3",
     "simple-icons": "^2.9.0"
