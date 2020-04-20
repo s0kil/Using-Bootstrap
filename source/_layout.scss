@@ -1,21 +1,21 @@
 // Mixins
 @import "_mixins";
 // Header
-@import "partials/header";
+@import "sections/header";
 // Footer
-@import "partials/footer";
+@import "sections/footer";
 
 // Main Layout
-@import "partials/opinion";
-@import "partials/top-story";
-@import "partials/latest-news";
-@import "partials/more-stories";
-@import "partials/editors-pick";
-@import "partials/culture-travel";
-@import "partials/in-the-magazine";
-@import "partials/featured-stories";
-@import "partials/featured-slideshows";
-@import "partials/newsweek-conversations";
+@import "sections/opinion";
+@import "sections/top-story";
+@import "sections/latest-news";
+@import "sections/more-stories";
+@import "sections/editors-pick";
+@import "sections/culture-travel";
+@import "sections/in-the-magazine";
+@import "sections/featured-stories";
+@import "sections/featured-slideshows";
+@import "sections/newsweek-conversations";
 
 body {
   margin: auto;

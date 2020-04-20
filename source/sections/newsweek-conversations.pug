@@ -5,7 +5,7 @@
     summary: "\"I try my best not to drink the Kool-Aid too much, because that can be a slippery slope,\" Paul Wesley said about dealing with fame.",
     time: "20:00"
   }
-  
+
   const newsweekConversations = [
     {
       title: "'American Horror Story's' Leslie Grossman Is the Definition of a Great Hollywood Character Actress",
@@ -23,14 +23,14 @@
       time: "17:39"
     }
   ];
-  
-// TODO : Section Title "NEWSWEEK CONVERSATIONS"
+
+// TODO: Section Title "NEWSWEEK CONVERSATIONS"
 .newsweek-conversations
   .newsweek-conversation-top
     .newsweek-conversation-top-image
       img.img-fluid(src=newsweekConversationsTop.image)
       .overlayContent
-        span.play-icon.play-icon-large.genericons-neue.genericons-neue-play
+        span.play-icon.play-icon-large
     .newsweek-conversation-top-details.p-3
       .newsweek-conversation-top-title
         h3= newsweekConversationsTop.title
@@ -44,7 +44,7 @@
       .newsweek-conversation-image.col-6
         img.img-fluid(src=conversation.image)
         .overlayContent
-          span.play-icon.play-icon-small.genericons-neue.genericons-neue-play
+          span.play-icon.play-icon-small
       .newsweek-conversation-details.col.p-3
         .newsweek-conversation-title
           h4.mb-0= conversation.title

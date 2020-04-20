@@ -15,7 +15,7 @@ packages:
       integrity: sha512-a9gxpmdXtZEInkCSHUJDLHZVBgb1QS0jhss4cPP93EW7s+uC5bikET2twEF3KV+7rDblJcmNvTR7VJejqd2C2g==
   /@babel/compat-data/7.9.0:
     dependencies:
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       invariant: 2.2.4
       semver: 5.7.1
     dev: true
@@ -85,7 +85,7 @@ packages:
     dependencies:
       '@babel/compat-data': 7.9.0
       '@babel/core': 7.9.0
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       invariant: 2.2.4
       levenary: 1.1.1
       semver: 5.7.1
@@ -618,7 +618,7 @@ packages:
       '@babel/core': 7.9.0
       '@babel/helper-module-transforms': 7.9.0
       '@babel/helper-plugin-utils': 7.8.3
-      babel-plugin-dynamic-import-node: 2.3.0
+      babel-plugin-dynamic-import-node: 2.3.1
     dev: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -630,7 +630,7 @@ packages:
       '@babel/helper-module-transforms': 7.9.0
       '@babel/helper-plugin-utils': 7.8.3
       '@babel/helper-simple-access': 7.8.3
-      babel-plugin-dynamic-import-node: 2.3.0
+      babel-plugin-dynamic-import-node: 2.3.1
     dev: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -642,7 +642,7 @@ packages:
       '@babel/helper-hoist-variables': 7.8.3
       '@babel/helper-module-transforms': 7.9.0
       '@babel/helper-plugin-utils': 7.8.3
-      babel-plugin-dynamic-import-node: 2.3.0
+      babel-plugin-dynamic-import-node: 2.3.1
     dev: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -901,7 +901,7 @@ packages:
       '@babel/plugin-transform-unicode-regex': 7.8.3_@babel+core@7.9.0
       '@babel/preset-modules': 0.1.3_@babel+core@7.9.0
       '@babel/types': 7.9.5
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       core-js-compat: 3.6.5
       invariant: 2.2.4
       levenary: 1.1.1
@@ -1130,7 +1130,7 @@ packages:
       '@parcel/utils': 2.0.0-nightly.228
       '@parcel/workers': 2.0.0-nightly.228_@parcel+core@2.0.0-nightly.226
       abortcontroller-polyfill: 1.4.0
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       clone: 2.1.2
       dotenv: 7.0.0
       dotenv-expand: 5.1.0
@@ -1518,7 +1518,7 @@ packages:
       '@parcel/core': 2.0.0-nightly.226_@parcel+core@2.0.0-nightly.226
       '@parcel/plugin': 2.0.0-nightly.228
       '@parcel/utils': 2.0.0-nightly.228
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       core-js: 3.6.5
       nullthrows: 1.1.1
       semver: 5.7.1
@@ -2118,12 +2118,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug==
-  /babel-plugin-dynamic-import-node/2.3.0:
+  /babel-plugin-dynamic-import-node/2.3.1:
     dependencies:
       object.assign: 4.1.0
     dev: true
     resolution:
-      integrity: sha512-o6qFkpeQEBxcqt0XYlWzAVxNCSCZdUgcR8IRlhD/8DylxjjO4foPcvTW0GGKa/cVt3rvxZ7o5ippJ+/0nvLhlQ==
+      integrity: sha512-q9YOcbDnAiq5Rn+rM3EWZJ1kgDQxJdJwjJZbPxJYm9NdBJnL4Vs4BM/ofx5TwIUWSw8T9nBpn3RRjyTKMcM/pw==
   /babel-runtime/6.26.0:
     dependencies:
       core-js: 2.6.11
@@ -2305,7 +2305,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==
-  /browserslist/4.11.1:
+  /browserslist/4.12.0:
     dependencies:
       caniuse-lite: 1.0.30001043
       electron-to-chromium: 1.3.413
@@ -2314,7 +2314,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-DCTr3kDrKEYNw6Jb9HFxVLQNaue8z+0ZfRBRjmCunKDEXEBajKDj2Y+Uelg+Pi29OnvaSGwjOsnRyNEkXzHg5g==
+      integrity: sha512-UH2GkcEDSI0k/lRkuDSzFl9ZZ87skSy9w2XAn1MsZnL+4c4rqbBd3e82UWHbYDpztABrPBhZsTEeuxVfHppqDg==
   /buffer-from/1.1.1:
     dev: true
     resolution:
@@ -2386,7 +2386,7 @@ packages:
       integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
   /caniuse-api/3.0.0:
     dependencies:
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       caniuse-lite: 1.0.30001043
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
@@ -2681,7 +2681,7 @@ packages:
       integrity: sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
   /core-js-compat/3.6.5:
     dependencies:
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       semver: 7.0.0
     dev: true
     resolution:
@@ -5005,7 +5005,7 @@ packages:
       integrity: sha512-rofZFHUg6ZIrvRwPeFktv06GdbDYLcGqh9EwiMutZg+a0oePCCw1zHOEiji6LCpyRcjTREtPASuUqeAvYlEVvQ==
   /postcss-colormin/4.0.3:
     dependencies:
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       color: 3.1.2
       has: 1.0.3
       postcss: 7.0.27
@@ -5069,7 +5069,7 @@ packages:
       integrity: sha512-alx/zmoeXvJjp7L4mxEMjh8lxVlDFX1gqWHzaaQewwMZiVhLo42TEClKaeHbRf6J7j82ZOdTJ808RtN0ZOZwvw==
   /postcss-merge-rules/4.0.3:
     dependencies:
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       caniuse-api: 3.0.0
       cssnano-util-same-parent: 4.0.1
       postcss: 7.0.27
@@ -5103,7 +5103,7 @@ packages:
   /postcss-minify-params/4.0.2:
     dependencies:
       alphanum-sort: 1.0.2
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       cssnano-util-get-arguments: 4.0.0
       postcss: 7.0.27
       postcss-value-parser: 3.3.1
@@ -5213,7 +5213,7 @@ packages:
       integrity: sha512-acwJY95edP762e++00Ehq9L4sZCEcOPyaHwoaFOhIwWCDfik6YvqsYNxckee65JHLKzuNSSmAdxwD2Cud1Z54A==
   /postcss-normalize-unicode/4.0.1:
     dependencies:
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       postcss: 7.0.27
       postcss-value-parser: 3.3.1
     dev: true
@@ -5253,7 +5253,7 @@ packages:
       integrity: sha512-2fCObh5UanxvSxeXrtLtlwVThBvHn6MQcu4ksNT2tsaV2Fg76R2CV98W7wNSlX+5/pFwEyaDwKLLoEV7uRybAw==
   /postcss-reduce-initial/4.0.3:
     dependencies:
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       caniuse-api: 3.0.0
       has: 1.0.3
       postcss: 7.0.27
@@ -6239,7 +6239,7 @@ packages:
       integrity: sha1-PFMZQukIwml8DsNEhYwobHygpgo=
   /stylehacks/4.0.3:
     dependencies:
-      browserslist: 4.11.1
+      browserslist: 4.12.0
       postcss: 7.0.27
       postcss-selector-parser: 3.1.2
     dev: true

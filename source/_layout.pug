@@ -4,56 +4,61 @@ layout restrictions for each individual section (grid area) -->
 // Preprocessor Mixins
 include _mixins
 // Header
-include partials/header
+include sections/header
 
 // Main Layout
 main.container-fluid.pt-4
   // Top Story
   section(style={"grid-area": "top-story"})
-    include partials/top-story
+    include sections/top-story
 
   // More Stories
   section(style={"grid-area": "more-stories"})
-    include partials/more-stories
+    include sections/more-stories
 
   // Culture & Travel
   section(style={"grid-area": "culture-travel"})
-    include partials/culture-travel
+    include sections/culture-travel
 
   // Featured Stories
   section(style={"grid-area": "featured-stories"})
-    include partials/featured-stories
+    include sections/featured-stories
+
+  // Sponsored Insight
+  // Sponsored Insight
+  // Sweepstakes
+  // Sponsored Insight
 
   // Opinion
   section(style={"grid-area": "opinion"})
-    include partials/opinion
+    include sections/opinion
 
   // Latest News
   section(style={"grid-area": "latest-news"})
-    include partials/latest-news
+    include sections/latest-news
 
-  // TODO: Does Not Exist
-  section(style={"grid-area": ""})
-    // Sponsored Insight
-    // Sign Up
-    // Sponsored Insight * 4
-    // Monthly Issue
+  // Sponsored Insight
+  // Sign Up For Newsletter
+  // Sponsored Insight
+  // Sponsored Insight
+  // Sponsored Insight
+  // Monthly Issue
 
   // In The Magazine
   section(style={"grid-area": "in-the-magazine"})
-    include partials/in-the-magazine
+    include sections/in-the-magazine
 
   // Newsweek Conversations
   section(style={"grid-area": "newsweek-conversations"})
-    include partials/newsweek-conversations
+    include sections/newsweek-conversations
 
   // Editors Pick
   section(style={"grid-area": "editors-pick"})
-    include partials/editors-pick
+    include sections/editors-pick
 
   // Featured Slideshows
   section(style={"grid-area": "featured-slideshows"})
-    include partials/featured-slideshows
+    include sections/featured-slideshows
 
   // TODO: Does Not Exist
   section(style={"grid-area": ""})
@@ -70,4 +75,4 @@ main.container-fluid.pt-4
     // Newsletter
 
 // Footer
-include partials/footer
+include sections/footer
