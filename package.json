@@ -22,10 +22,10 @@
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
     "genericons-neue": "^4.0.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "parcel-bundler": "^1.12.4",
     "pug": "^2.0.4",
     "sass": "^1.26.3",
-    "simple-icons": "^2.8.0"
+    "simple-icons": "^2.9.0"
   }
 }
