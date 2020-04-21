@@ -23,6 +23,8 @@
     "Consent preferences"
   ]
 
+include ../partials/icons
+
 footer.footer.container-fluid.mb-4
   .footer-border.pb-4
   .footer-logo.mb-2
@@ -31,13 +33,21 @@ footer.footer.container-fluid.mb-4
     span &copy; 2020 Newsweek
   .footer-social.d-flex
     .footer-social-icon.mr-3
-      //- include ../../node_modules/simple-icons/icons/facebook.svg
+      a(target="_blank", href="https://www.facebook.com/Newsweek")
+        +iconSocial("facebook")
     .footer-social-icon.mr-3
-      //- include ../../node_modules/simple-icons/icons/twitter.svg
+      a(target="_blank", href="https://twitter.com/Newsweek")
+        +iconSocial("twitter")
     .footer-social-icon.mr-3
-      //- include ../../node_modules/simple-icons/icons/instagram.svg
+      a(target="_blank", href="https://instagram.com/newsweek")
+        +iconSocial("instagram")
     .footer-social-icon.mr-3
-      //- include ../../node_modules/simple-icons/icons/linkedin.svg
+      a(target="_blank", href="https://newsweekscience.tumblr.com")
+        +iconSocial("tumblr")
+    .footer-social-icon.mr-3
+      a(target="_blank", href="https://www.linkedin.com/company/newsweek")
+        +iconSocial("linkedin")
+
   hr
   .footer-editions.row
     .col-3.pr-0

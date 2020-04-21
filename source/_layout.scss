@@ -1,11 +1,7 @@
-// Mixins
-@import "_mixins";
 // Header
 @import "sections/header";
-// Footer
-@import "sections/footer";
 
-// Main Layout
+// Sections
 @import "sections/opinion";
 @import "sections/top-story";
 @import "sections/latest-news";
@@ -88,3 +84,6 @@ main {
   @media (min-width: 1200px) {
   }
 }
+
+// Footer
+@import "sections/footer";

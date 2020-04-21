@@ -1,78 +1,73 @@
 <!-- The (_layout.pug, _layout.scss) files define
 layout restrictions for each individual section (grid area) -->
 
-// Preprocessor Mixins
-include _mixins
-// Header
+//- Preprocessor Mixins
+include partials/_mixins
+//- Header
 include sections/header
 
-// Main Layout
+//- Main Layout
 main.container-fluid.pt-4
-  // Top Story
+  //- Top Story
   section(style={"grid-area": "top-story"})
     include sections/top-story
 
-  // More Stories
+  //- More Stories
   section(style={"grid-area": "more-stories"})
     include sections/more-stories
 
-  // Culture & Travel
+  //- Culture & Travel
   section(style={"grid-area": "culture-travel"})
     include sections/culture-travel
 
-  // Featured Stories
+  //- Featured Stories
   section(style={"grid-area": "featured-stories"})
     include sections/featured-stories
 
-  // Sponsored Insight
-  // Sponsored Insight
-  // Sweepstakes
-  // Sponsored Insight
+  //- Call To Action #1
+  section(style={"grid-area": "call-to-action-1"})
+    //- TODO: Sponsored Insight
+    //- TODO: Sponsored Insight
+    //- TODO: Sweepstakes
+    //- TODO: Sponsored Insight
 
-  // Opinion
+  //- Opinion
   section(style={"grid-area": "opinion"})
     include sections/opinion
 
-  // Latest News
+  //- Latest News
   section(style={"grid-area": "latest-news"})
     include sections/latest-news
 
-  // Sponsored Insight
-  // Sign Up For Newsletter
-  // Sponsored Insight
-  // Sponsored Insight
-  // Sponsored Insight
-  // Monthly Issue
+  //- Call To Action #2
+  section(style={"grid-area": "call-to-action-2"})
+    //- TODO: Sponsored Insight
+    //- TODO: Sign Up For Newsletter
+    //- TODO: Sponsored Insight
+    //- TODO: Sponsored Insight
+    //- TODO: Sponsored Insight
+    //- TODO: Monthly Issue
 
-  // In The Magazine
+  //- In The Magazine
   section(style={"grid-area": "in-the-magazine"})
     include sections/in-the-magazine
 
-  // Newsweek Conversations
+  //- Newsweek Conversations
   section(style={"grid-area": "newsweek-conversations"})
     include sections/newsweek-conversations
 
-  // Editors Pick
+  //- Editors Pick
   section(style={"grid-area": "editors-pick"})
     include sections/editors-pick
 
-  // Featured Slideshows
+  //- Featured Slideshows
   section(style={"grid-area": "featured-slideshows"})
     include sections/featured-slideshows
 
-  // TODO: Does Not Exist
-  section(style={"grid-area": ""})
-    // U.S.
-    // World
-    // Business
-    // Tech & Science
-    // Culture
-    // Sports
+  //- Call To Action #3
+  section(style={"grid-area": "call-to-action-3"})
+    //- TODO: Subscribe
+    //- TODO: Newsletter
 
-  // TODO: Does Not Exist
-  section(style={"grid-area": ""})
-    // Subscribe
-    // Newsletter
-
-// Footer
+//- Footer
 include sections/footer

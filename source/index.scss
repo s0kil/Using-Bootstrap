@@ -5,7 +5,10 @@
 // Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Layout Of Page
+// Mixins
+@import "partials/_mixins";
+
+// Layout Sections Of Page
 @import "_layout";
 
 // Global Styles
