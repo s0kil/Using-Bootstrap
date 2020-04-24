@@ -8,12 +8,11 @@ header.page-header
           include ../assets/brand-logo.svg
 
     .col.p-0.d-flex.align-items-center.justify-content-end
-      a.font-roboto.font-bold.font-medium.font-14.header-action(href="/") Sign In
-      a.font-roboto.font-bold.font-medium.font-14.header-action-subscribe(
-        href="/"
-      ) Subscribe
+      a.font-roboto.font-bold.font-medium.font-14.header-action.m-1(href="/") Sign In
+      a.font-roboto.font-bold.font-medium.font-14.header-action-subscribe(href="/") Subscribe
         span.arrow
       span.menu-icon
+        +iconGeneral("menu")
 
   nav.header-bottom
   div

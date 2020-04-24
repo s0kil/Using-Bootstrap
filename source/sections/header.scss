@@ -20,8 +20,14 @@ $red: #f72210;
 }
 
 .menu-icon {
+  margin: auto;
   color: #fb9a94;
-  font-size: 25px;
+
+  svg {
+    $size: 34px;
+    width: $size;
+    height: $size;
+  }
 }
 
 .header-action {
@@ -34,7 +40,7 @@ $red: #f72210;
   color: $red;
   background: white;
   text-transform: uppercase;
-  padding: 0.4em 0.2em;
+  padding: 0.2em;
 
   & .arrow {
     display: none;

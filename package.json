@@ -24,8 +24,8 @@
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
     "jquery": "^3.5.0",
-    "parcel": "^2.0.0-nightly.227",
+    "parcel": "^2.0.0-nightly.230",
     "pug": "^2.0.4",
-    "sass": "^1.26.3"
+    "sass": "^1.26.5"
   }
 }

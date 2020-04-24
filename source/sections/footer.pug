@@ -23,7 +23,28 @@
     "Consent preferences"
   ]
 
-include ../partials/icons
+  const footerSocialPages = [
+    {
+      name: "facebook",
+      link: "https://www.facebook.com/Newsweek"
+    },
+    {
+      name: "twitter",
+      link: "https://twitter.com/Newsweek"
+    },
+    {
+      name: "instagram",
+      link: "https://instagram.com/newsweek"
+    },
+    {
+      name: "tumblr",
+      link: "https://newsweekscience.tumblr.com"
+    },
+    {
+      name: "linkedin",
+      link: "https://www.linkedin.com/company/newsweek"
+    }
+  ]
 
 footer.footer.container-fluid.mb-4
   .footer-border.pb-4
@@ -32,21 +53,10 @@ footer.footer.container-fluid.mb-4
   .footer-copyright.mb-2
     span &copy; 2020 Newsweek
   .footer-social.d-flex
-    .footer-social-icon.mr-3
-      a(target="_blank", href="https://www.facebook.com/Newsweek")
-        +iconSocial("facebook")
-    .footer-social-icon.mr-3
-      a(target="_blank", href="https://twitter.com/Newsweek")
-        +iconSocial("twitter")
-    .footer-social-icon.mr-3
-      a(target="_blank", href="https://instagram.com/newsweek")
-        +iconSocial("instagram")
-    .footer-social-icon.mr-3
-      a(target="_blank", href="https://newsweekscience.tumblr.com")
-        +iconSocial("tumblr")
-    .footer-social-icon.mr-3
-      a(target="_blank", href="https://www.linkedin.com/company/newsweek")
-        +iconSocial("linkedin")
+    each socialPage in footerSocialPages
+      .footer-social-icon.mr-3
+        a(target="_blank", href=socialPage.link)
+          +iconSocial(socialPage.name)
 
   hr
   .footer-editions.row
