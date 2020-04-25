@@ -80,3 +80,38 @@ article {
   padding-bottom: 11px;
   color: rgba(12, 11, 11, 0.8);
 }
+
+.section-title {
+  color: #333;
+  font: bold 19px/19px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+.newsweek-icon {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-image: url(https://g.newsweek.com/themes/newsweek/favicons/favicon-194x194.png);
+}
+
+.newsweek-icon-stacked {
+  position: relative;
+
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+
+  @extend .newsweek-icon;
+
+  &:before {
+    content: "";
+    z-index: -1;
+    display: block;
+
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+
+    // Include All Styles From Class
+    @extend .newsweek-icon;
+  }
+}
