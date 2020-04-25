@@ -4,7 +4,7 @@ devDependencies:
   bootstrap: 4.4.1_jquery@3.5.0
   cssnano: 4.1.10
   jquery: 3.5.0
-  parcel: 2.0.0-nightly.234
+  parcel: 2.0.0-alpha.3.2
   pug: 2.0.4
   sass: 1.26.5
 lockfileVersion: 5.1
@@ -2315,7 +2315,7 @@ packages:
       integrity: sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==
   /browserslist/4.12.0:
     dependencies:
-      caniuse-lite: 1.0.30001047
+      caniuse-lite: 1.0.30001048
       electron-to-chromium: 1.3.418
       node-releases: 1.1.53
       pkg-up: 2.0.0
@@ -2395,16 +2395,16 @@ packages:
   /caniuse-api/3.0.0:
     dependencies:
       browserslist: 4.12.0
-      caniuse-lite: 1.0.30001047
+      caniuse-lite: 1.0.30001048
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
     dev: true
     resolution:
       integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==
-  /caniuse-lite/1.0.30001047:
+  /caniuse-lite/1.0.30001048:
     dev: true
     resolution:
-      integrity: sha512-eaZFO+zPTGCCi5EBK0Ri8f2qXJ1lLH0Ic/UM2wrfc0bQkSiwGEk75tZEu2Gns7uvTMKcADLh0+QdTjzcRt3owA==
+      integrity: sha512-g1iSHKVxornw0K8LG9LLdf+Fxnv7T1Z+mMsf0/YYLclQX4Cd522Ap0Lrw6NFqHgezit78dtyWxzlV2Xfc7vgRg==
   /caseless/0.12.0:
     dev: true
     resolution:
@@ -4095,10 +4095,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==
-  /is-promise/2.2.0:
+  /is-promise/2.2.2:
     dev: true
     resolution:
-      integrity: sha512-N/4ZxZGjDLAWJQNtcq1/5AOiWTAAhDwnjlaGPaC2+p3pQ+Ka2Dl/EL29DppuoiZ8Xr1/p/9ywBGGzHRPoWKfGA==
+      integrity: sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==
   /is-regex/1.0.5:
     dependencies:
       has: 1.0.3
@@ -4297,7 +4297,7 @@ packages:
       integrity: sha1-MT5mvB5cwG5Di8G3SZwuXFastqI=
   /jstransformer/1.0.0:
     dependencies:
-      is-promise: 2.2.0
+      is-promise: 2.2.2
       promise: 7.3.1
     dev: true
     resolution:
@@ -4880,27 +4880,22 @@ packages:
     dev: true
     resolution:
       integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
-  /parcel/2.0.0-nightly.234:
+  /parcel/2.0.0-alpha.3.2:
     dependencies:
       '@parcel/config-default': 2.0.0-nightly.236_@parcel+core@2.0.0-nightly.234
       '@parcel/core': 2.0.0-nightly.234_@parcel+core@2.0.0-nightly.234
-      '@parcel/diagnostic': 2.0.0-nightly.236
       '@parcel/fs': 2.0.0-nightly.236_@parcel+core@2.0.0-nightly.234
       '@parcel/logger': 2.0.0-nightly.236
       '@parcel/package-manager': 2.0.0-nightly.236_@parcel+core@2.0.0-nightly.234
-      '@parcel/utils': 2.0.0-nightly.236
       chalk: 2.4.2
       commander: 2.20.3
       get-port: 4.2.0
       react: 16.13.1
       v8-compile-cache: 2.1.0
     dev: true
-    engines:
-      node: '>= 10.0.0'
     hasBin: true
-    requiresBuild: true
     resolution:
-      integrity: sha512-RflZnvJkudQPKc+yqN5/LUok20aAmAKva02Wue7ieEyRpAzfto5EgaBBS2rlVPUZ02ipxOwF0OhRdxc4q4nlgg==
+      integrity: sha512-FG8JZtY2MAhxYANtLUlRbPNhTqtDB6zDQ+GVPBgzs6xlzyWSEdzayJ2a25Nnee+SBptV9nSHavkMrtP3YLrnAg==
   /parse-asn1/5.1.5:
     dependencies:
       asn1.js: 4.10.1
@@ -6818,6 +6813,6 @@ specifiers:
   bootstrap: ^4.4.1
   cssnano: ^4.1.10
   jquery: ^3.5.0
-  parcel: ^2.0.0-nightly.234
+  parcel: ^2.0.0-alpha.3.2
   pug: ^2.0.4
   sass: ^1.26.5
