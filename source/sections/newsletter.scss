@@ -1,2 +1,16 @@
+.newsletter-title {
+  color: #f72210;
+  text-transform: uppercase;
+}
+
 .newsletter {
+  .card,
+  .card * {
+    border: 0;
+    border-radius: 0;
+  }
+
+  .card-body {
+    border: 1px solid #ebebeb;
+  }
 }
