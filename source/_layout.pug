@@ -1,11 +1,11 @@
 <!-- The (_layout.pug, _layout.scss) files define
 layout restrictions for each individual section (grid area) -->
 
-//- Preprocessor Mixins
-include partials/_mixins
-
 //- Icons
 include partials/icons
+
+//- Preprocessor Mixins For Reusable Sections
+include partials/mixins
 
 //- Header
 include sections/header
@@ -28,13 +28,6 @@ main.container-fluid.pt-4
   section(style={"grid-area": "featured-stories"})
     include sections/featured-stories
 
-  //- Call To Action #1
-  section(style={"grid-area": "call-to-action-1"})
-    //- TODO: Sponsored Insight
-    //- TODO: Sponsored Insight
-    //- TODO: Sweepstakes
-    //- TODO: Sponsored Insight
-
   //- Opinion
   section(style={"grid-area": "opinion"})
     include sections/opinion
@@ -42,15 +35,6 @@ main.container-fluid.pt-4
   //- Latest News
   section(style={"grid-area": "latest-news"})
     include sections/latest-news
-
-  //- Call To Action #2
-  section(style={"grid-area": "call-to-action-2"})
-    //- TODO: Sponsored Insight
-    //- TODO: Sign Up For Newsletter
-    //- TODO: Sponsored Insight
-    //- TODO: Sponsored Insight
-    //- TODO: Sponsored Insight
-    //- TODO: Monthly Issue
 
   //- In The Magazine
   section(style={"grid-area": "in-the-magazine"})
@@ -68,10 +52,13 @@ main.container-fluid.pt-4
   section(style={"grid-area": "featured-slideshows"})
     include sections/featured-slideshows
 
-  //- Call To Action #3
-  section(style={"grid-area": "call-to-action-3"})
-    //- TODO: Subscribe
-    //- TODO: Newsletter
+  //- Subscribe
+  section(style={"grid-area": "subscribe"})
+    include sections/subscribe
+
+  //- Newsletter
+  section(style={"grid-area": "newsletter"})
+    include sections/newsletter
 
 //- Footer
 include sections/footer

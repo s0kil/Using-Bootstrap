@@ -1,0 +1,22 @@
+.subscribe-title {
+  color: #f72210;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  border: 0;
+  border-radius: 0;
+  background-color: #f4f5f6;
+
+  .offset-top {
+    position: absolute;
+    top: 14px;
+  }
+
+  .btn-red {
+    background-color: #f72210;
+    color: white;
+    font: bold 18px/18px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+  }
+}

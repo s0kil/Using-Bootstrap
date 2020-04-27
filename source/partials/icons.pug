@@ -9,7 +9,7 @@
   }
 
 mixin iconGeneral(iconName)
-  img.icon.icon-general.icon-hidden(src=iconURL(IconPack.Feather, iconName), alt=iconName, onload="injectSVG(this)")
+  img.icon.icon-general.invisible(src=iconURL(IconPack.Feather, iconName), alt=iconName, onload="injectSVG(this)")
 
 mixin iconSocial(iconName)
-  img.icon.icon-social.icon-hidden(src=iconURL(IconPack.Simple, iconName), alt=iconName, onload="injectSVG(this)")
+  img.icon.icon-social.invisible(src=iconURL(IconPack.Simple, iconName), alt=iconName, onload="injectSVG(this)")

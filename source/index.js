@@ -5,7 +5,7 @@ window.injectSVG = function (element) {
     afterEach(error, injectedSVG) {
       if (error) throw error;
       // Display SVG After Injection
-      injectedSVG.classList.remove("icon-hidden");
+      injectedSVG.classList.remove("invisible");
     },
   });
 };
