@@ -16,15 +16,17 @@
   },
   "scripts": {
     "start": "parcel serve source/index.pug --no-cache --no-autoinstall",
-    "build": "parcel build source/index.pug --no-cache --no-autoinstall"
+    "build": "parcel build source/index.pug --no-cache --no-autoinstall",
+    "serve": "python3 -m http.server --directory dist/ 1234"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@fullhuman/postcss-purgecss": "^2.1.2",
     "@tanem/svg-injector": "^8.0.49",
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
     "jquery": "^3.5.0",
-    "parcel": "^2.0.0-alpha.3.2",
+    "parcel": "^2.0.0-nightly.234",
     "pug": "^2.0.4",
     "sass": "^1.26.5"
   }
