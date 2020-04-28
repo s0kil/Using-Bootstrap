@@ -29,7 +29,8 @@ main {
   // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-column-gap: 30px;
+    grid-template-columns: 0.8fr 1fr;
     grid-template-rows: repeat(10, minmax(100px, auto));
     grid-template-areas:
       "featured-stories top-story"
