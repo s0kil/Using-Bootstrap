@@ -32,26 +32,17 @@ main {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
     grid-template-rows: repeat(10, minmax(100px, auto));
     grid-template-areas:
-      // 1
       "featured-stories top-story"
-      // 2
       "featured-stories culture-travel"
-      // 3
       "featured-stories more-stories"
-      // 4
       "opinion opinion"
-      // 5
       "latest-news latest-news"
-      // 6
       "in-the-magazine in-the-magazine"
-      // 7
       "newsweek-conversations newsweek-conversations"
-      // 8
       "editors-pick editors-pick"
-      // 9
       "featured-slideshows featured-slideshows"
-      // 10
-      ". .";
+      "subscribe subscribe"
+      "newsletter newsletter";
   }
 
   // Large devices (desktops, 992px and up)
@@ -60,25 +51,15 @@ main {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: repeat(10, minmax(100px, auto));
     grid-template-areas:
-      // 1
       "featured-stories top-story opinion"
-      // 2
       "featured-stories culture-travel opinion"
-      // 3
       "featured-stories culture-travel latest-news"
-      // 4
       "featured-stories more-stories latest-news"
-      // 5
       "in-the-magazine in-the-magazine in-the-magazine"
-      // 6
       "newsweek-conversations newsweek-conversations newsweek-conversations"
-      // 7
       "editors-pick editors-pick editors-pick"
-      // 8
       "featured-slideshows featured-slideshows featured-slideshows"
-      // 9
-      ". . ."
-      // 10
+      "subscribe subscribe newsletter"
       ". . .";
   }
 
