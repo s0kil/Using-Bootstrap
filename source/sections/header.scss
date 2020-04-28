@@ -4,11 +4,17 @@ $red: #f72210;
   background: $red;
 }
 
+.header-brand {
+  display: block;
+  width: 132px;
+  height: 20px;
+}
+
 .header-brand svg {
   display: block;
   fill: white;
-  width: 132px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 .header-bottom {
