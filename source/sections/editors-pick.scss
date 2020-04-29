@@ -1,0 +1,33 @@
+.editor-picks-header {
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  @extend .d-flex;
+  @extend .pb-3;
+  @extend .pt-4;
+}
+
+.editor-picks-title {
+  @extend .section-title;
+  @extend .ml-2;
+  @extend .pb-0;
+}
+
+.editor-pick {
+  @extend .pb-4;
+}
+
+.editor-pick-image {
+  @extend .position-relative;
+
+  img {
+    @extend .img-fluid;
+  }
+}
+
+.editor-pick-title {
+  @extend .mt-2;
+}
+
+.editor-pick-summary {
+  @extend .font-13;
+}

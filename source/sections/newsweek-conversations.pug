@@ -24,31 +24,31 @@
     }
   ];
 
-.newsweek-conversations-header.newsweek-title.d-flex.justify-content-center.align-items-center.pb-3.pt-4
+.newsweek-conversations-header
   .newsweek-icon
-  .section-title.ml-2.pb-0 NEWSWEEK CONVERSATIONS
+  .newsweek-conversations-title NEWSWEEK CONVERSATIONS
 .newsweek-conversations
   .newsweek-conversation-top
     .newsweek-conversation-top-image
-      img.img-fluid(src=newsweekConversationsTop.image)
+      img(src=newsweekConversationsTop.image)
       .overlayContent
-        span.play-icon.play-icon-large
-    .newsweek-conversation-top-details.p-3
+        span
+    .newsweek-conversation-top-details
       .newsweek-conversation-top-title
         h3= newsweekConversationsTop.title
-      .newsweek-conversation-top-summary.mb-2
+      .newsweek-conversation-top-summary
         summary= newsweekConversationsTop.summary
       .newsweek-conversation-top-time
         time= newsweekConversationsTop.time
 
-  each conversation in newsweekConversations
-    .newsweek-conversation.conversation-border.row.align-items-center
-      .newsweek-conversation-image.col-6
-        img.img-fluid(src=conversation.image)
+  each $newsweekConversation in newsweekConversations
+    .newsweek-conversation
+      .newsweek-conversation-image
+        img(src=$newsweekConversation.image)
         .overlayContent
-          span.play-icon.play-icon-small
-      .newsweek-conversation-details.col.p-3
+          span
+      .newsweek-conversation-details
         .newsweek-conversation-title
-          h4.mb-0= conversation.title
+          h4= $newsweekConversation.title
         .newsweek-conversation-time
-          time= conversation.time
+          time= $newsweekConversation.time

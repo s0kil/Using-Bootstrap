@@ -50,17 +50,17 @@
     }
   ];
 
-.editor-picks-header.newsweek-title.d-flex.justify-content-center.align-items-center.pb-3.pt-4
+.editor-picks-header
   .newsweek-icon
-  .section-title.ml-2.pb-0 EDITOR'S PICK
+  .editor-picks-title EDITOR'S PICK
 +sectionSeparator()
 .editor-picks
-  each pickedArticle in editorsPickArticles
-    .editor-pick.pb-4
-      .editor-pick-image.position-relative
-        img.img-fluid(src=pickedArticle.image)
-        +overlayContent(pickedArticle.category)
-      .editor-pick-title.mt-2
-        h3= pickedArticle.title
-      .editor-pick-summary.font-13
-        summary= pickedArticle.summary
+  each $pickedArticle in editorsPickArticles
+    .editor-pick
+      .editor-pick-image
+        img(src=$pickedArticle.image)
+        +overlayContent($pickedArticle.category)
+      .editor-pick-title
+        h3= $pickedArticle.title
+      .editor-pick-summary
+        summary= $pickedArticle.summary

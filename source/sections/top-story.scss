@@ -1,14 +1,26 @@
 .top-story-title {
-  font-size: 22px;
-  line-height: 24px;
+  @extend .section-title;
 }
 
-.top-story-wrap {
+.top-story-image {
+  @extend .position-relative;
+
   position: relative;
   min-height: 33px;
   margin-bottom: 10px;
+
+  img {
+    @extend .img-fluid;
+  }
 }
 
-.top-story-summary {
-  font-size: 13px;
+.top-story-body {
+  h1 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  p {
+    font-size: 13px;
+  }
 }

@@ -46,25 +46,25 @@
     }
   ]
 
-footer.footer.container-fluid.mb-4.pt-4
-  .footer-border.pb-4
-  .footer-logo.mb-2
+footer.footer
+  .footer-border
+  .footer-logo
     include ../assets/brand-logo.svg
-  .footer-copyright.mb-2
+  .footer-copyright
     span &copy; 2020 Newsweek
-  .footer-social.d-flex
-    each socialPage in footerSocialPages
-      .footer-social-icon.mr-3
-        a(target="_blank", href=socialPage.link)
-          +iconSocial(socialPage.name)
-
+  .footer-social-icons
+    each $socialPage in footerSocialPages
+      .footer-social-icon
+        a(target="_blank", href=$socialPage.link)
+          +iconSocial($socialPage.name)
   hr
-  .footer-editions.row
+  .footer-editions
+    // TODO: Refactor Below
     .col-3.pr-0
       strong.mt-1.d-block Editions:
     .col-8.pl-0
-      for edition in footerEditions
-        p.pr-3.mt-1.mb-1.d-inline-block= edition
+      for $footerEdition in footerEditions
+        p.pr-3.mt-1.mb-1.d-inline-block= $footerEdition
   .footer-sitemap
-    for siteLink in footerSiteMap
-      p.font-14.pr-3.mt-1.mb-1.d-inline-block= siteLink
+    for $siteLink in footerSiteMap
+      p= $siteLink

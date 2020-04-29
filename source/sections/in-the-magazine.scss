@@ -1,6 +1,23 @@
+.magazine-articles-header {
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  @extend .d-flex;
+  @extend .pb-3;
+  @extend .pt-3;
+}
+
+.magazine-articles-title {
+  @extend .section-title;
+  @extend .ml-2;
+  @extend .pb-0;
+}
+
 .magazine-article-image {
   position: relative;
-  & img {
+
+  img {
+    @extend .img-fluid;
+
     width: 100%;
     height: 60vw;
     object-fit: cover;
@@ -29,4 +46,15 @@
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.magazine-article-categories {
+  @extend .mt-2;
+  @extend .mb-1;
+}
+
+.magazine-article-title {
+  h5 {
+    @extend .font-16;
+  }
 }

@@ -6,11 +6,12 @@
     summary: "Tehran could cause significant disruption with cyber attacks against the U.S. government, companies, high-profile individuals—and possibly even the 2020 elections."
   }
 
-.section-title Top Story
+.top-story-title Top Story
 article.top-story
-  .top-story-wrap.position-relative
-    img.top-story-image.img-fluid(src=topStory.image, alt=topStory.title)
+  .top-story-image
+    img(src=topStory.image, alt=topStory.title)
     +overlayContent(topStory.category)
 
-  h1.top-story-title= topStory.title
-  p.top-story-summary= topStory.summary
+  .top-story-body
+    h1= topStory.title
+    p= topStory.summary

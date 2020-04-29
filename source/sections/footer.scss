@@ -1,9 +1,19 @@
+.footer {
+  @extend .container-fluid;
+  @extend .mb-4;
+  @extend .pt-4;
+}
+
 .footer-border {
+  @extend .pb-4;
+
   border-top: 2px solid #f4f5f6;
 }
 
 .footer-logo {
-  & svg {
+  @extend .mb-2;
+
+  svg {
     display: block;
     width: 236px;
     height: 36px;
@@ -13,11 +23,33 @@
   }
 }
 
+.footer-copyright {
+  @extend .mb-2;
+}
+
+.footer-social-icons {
+  @extend .d-flex;
+}
+
 .footer-social-icon {
-  & svg {
+  @extend .mr-3;
+
+  svg {
     fill: #666;
     $size: 25px;
     height: $size;
     width: $size;
   }
+}
+
+.footer-editions {
+  @extend .row;
+}
+
+.footer-sitemap {
+  @extend .d-inline-block;
+  @extend .font-14;
+  @extend .pr-3;
+  @extend .mt-1;
+  @extend .mb-1;
 }

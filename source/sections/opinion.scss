@@ -1,3 +1,7 @@
+.opinion-articles-title {
+  @extend .section-title;
+}
+
 .opinion-articles {
   & :not(:last-child).separator {
     border-top: 1px solid #ddd;
@@ -5,7 +9,23 @@
 }
 
 .opinion-article {
-  // TODO: Extract Into Global Styles
+  @extend .pb-3;
+  @extend .row;
+}
+
+.opinion-article-image {
+  @extend .col-3;
+
+  img {
+    @extend .img-fluid;
+    @extend .rounded;
+  }
+}
+
+.opinion-article-body {
+  @extend .col;
+  @extend .p-0;
+
   font: bold 17px/21px "Roboto Condensed", sans-serif;
 }
 

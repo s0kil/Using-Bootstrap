@@ -1,4 +1,8 @@
 .newsletter-title {
+  @extend .font-roboto;
+  @extend .font-bold;
+  @extend .mb-1;
+
   color: #f72210;
   text-transform: uppercase;
 }
@@ -12,5 +16,32 @@
 
   .card-body {
     border: 1px solid #ebebeb;
+  }
+}
+
+.newsletter-item {
+  @extend .text-center;
+  @extend .card;
+
+  img {
+    @extend .card-img-top;
+  }
+}
+
+.newsletter-item-body {
+  @extend .card-body;
+
+  h3 {
+    @extend .mb-3;
+  }
+
+  p {
+    @extend .font-15;
+    @extend .mb-4;
+  }
+
+  a {
+    @extend .call-to-action-button;
+    @extend .p-2;
   }
 }

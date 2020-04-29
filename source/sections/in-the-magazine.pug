@@ -37,17 +37,17 @@
     }
   ]
 
-.magazine-articles-header.newsweek-title.d-flex.justify-content-center.align-items-center.pb-3.pt-3
+.magazine-articles-header
   .newsweek-icon
-  .section-title.ml-2.pb-0 IN THE MAGAZINE
+  .magazine-articles-title IN THE MAGAZINE
 .magazine-articles
-  each article in magazineArticles
+  each $magazineArticle in magazineArticles
     .magazine-article
       .magazine-article-image
-        img.img-fluid(src=article.image)
-        span.magazine-article-image-overlay= article.categories.shift()
-      .magazine-article-categories.mt-2.mb-1
-        each category in article.categories
-          span.magazine-article-category= category
+        img(src=$magazineArticle.image)
+        span.magazine-article-image-overlay= $magazineArticle.categories.shift()
+      .magazine-article-categories
+        each $magazineArticleCategory in $magazineArticle.categories
+          span.magazine-article-category= $magazineArticleCategory
       .magazine-article-title
-        h5.font-16= article.title
+        h5= $magazineArticle.title

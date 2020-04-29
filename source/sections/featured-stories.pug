@@ -58,26 +58,25 @@
     }
   ]
 
-.section-title FEATURED STORIES
+.featured-stories-title FEATURED STORIES
 .featured-stories
-  each story in featuredStories
-    .featured-story.pb-4
-      .featured-story-image.position-relative
-        img.img-fluid(src=story.image)
-        if story.sponsored
-          .sponsored
-            +overlayContent(story.category)
+  each $featuredStory in featuredStories
+    .featured-story
+      .featured-story-image
+        img(src=$featuredStory.image)
+        if $featuredStory.sponsored
+          .featured-story-sponsored
+            +overlayContent($featuredStory.category)
         else
-          +overlayContent(story.category)
-
-      if story.sponsored
-        .featured-story-info.p-3
-          .featured-story-title.mt-2
-            h3= story.title
-          .featured-story-summary.font-13
-            p= story.summary
+          +overlayContent($featuredStory.category)
+      if $featuredStory.sponsored
+        .featured-story-info
+          .featured-story-title
+            h3= $featuredStory.title
+          .featured-story-summary
+            p= $featuredStory.summary
       else
-        .featured-story-title.mt-2
-          h3= story.title
-        .featured-story-summary.font-13
-          p= story.summary
+        .featured-story-title
+          h3= $featuredStory.title
+        .featured-story-summary
+          p= $featuredStory.summary

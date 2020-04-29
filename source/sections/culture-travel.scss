@@ -7,12 +7,25 @@
   }
 }
 
+.culture-travel-articles {
+  @extend .row;
+}
+
+.culture-travel-article {
+  @extend .col-md-6;
+}
+
+.culture-travel-article-image {
+  @extend .img-fluid;
+}
+
 .culture-travel-card {
   padding: 15px 10px 20px;
 }
 
 .culture-travel-article-title {
   & h5 {
+    @extend .mb-2;
     font: 20px/22px "Lora", serif;
     color: #272727;
   }

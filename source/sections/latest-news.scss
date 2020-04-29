@@ -1,17 +1,33 @@
+.latest-news-title {
+  @extend .section-title;
+}
+
 .latest-news {
   & :not(:last-child).separator {
     border-top: 1px solid #ddd;
   }
 }
 
-.latest-news-image {
-  & img {
+.latest-news-article {
+  @extend .pb-2;
+  @extend .row;
+}
+
+.latest-news-article-image {
+  @extend .col-5;
+
+  img {
+    @extend .img-fluid;
+
     width: 100%;
     max-height: 100px;
     object-fit: cover;
   }
 }
 
-.latest-news-title {
+.latest-news-article-title {
+  @extend .col;
+  @extend .p-0;
+
   font: bold 17px/21px "Roboto Condensed", sans-serif;
 }

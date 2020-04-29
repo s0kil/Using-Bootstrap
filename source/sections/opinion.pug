@@ -1,5 +1,5 @@
 -
-  const opinions = [
+  const opinionArticles = [
     {
       author: "Ryan Thomas",
       title: "Republican Lawmakers' Blind Loyalty to Trump Is a Case Study in Cowardice",
@@ -32,13 +32,12 @@
     }
   ]
 
-.section-title OPINION
+.opinion-articles-title OPINION
 .opinion-articles
-  each opinion in opinions
-    .opinion-article.row.pb-3
-      .opinion-article-image.col-3
-        img.img-fluid.rounded(src=opinion.headShotImage)
-      .col.p-0
-        .opinion-article-title= opinion.title
-        .opinion-article-author= opinion.author
-    .separator.pt-3
+  each $opinionArticle in opinionArticles
+    .opinion-article
+      .opinion-article-image
+        img(src=$opinionArticle.headShotImage)
+      .opinion-article-body
+        .opinion-article-title= $opinionArticle.title
+        .opinion-article-author= $opinionArticle.author

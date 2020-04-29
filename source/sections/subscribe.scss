@@ -1,9 +1,17 @@
 .subscribe-title {
+  @extend .font-roboto;
+  @extend .font-bold;
+
   color: #f72210;
   text-transform: uppercase;
 }
 
 .subscribe {
+  @extend .card;
+  @extend .pl-3;
+  @extend .pr-3;
+  @extend .pt-4;
+
   border: 0;
   border-radius: 0;
   background-color: #f4f5f6;
@@ -11,5 +19,46 @@
   .offset-top {
     position: absolute;
     top: 14px;
+  }
+}
+
+.subscribe-images {
+  @extend .position-relative;
+  @extend .card-img-top;
+  @extend .row;
+
+  & :nth-child(2) {
+    @extend .offset-4;
+    @extend .offset-top;
+  }
+}
+
+.subscribe-image {
+  @extend .col-9;
+
+  img {
+    @extend .img-fluid;
+  }
+}
+
+.subscribe-body {
+  @extend .text-center;
+  @extend .card-body;
+  @extend .container;
+
+  h3 {
+    @extend .card-title;
+    @extend .mb-3;
+  }
+
+  p {
+    @extend .card-text;
+    @extend .font-15;
+    @extend .mb-4;
+  }
+
+  a {
+    @extend .call-to-action-button;
+    @extend .p-2;
   }
 }

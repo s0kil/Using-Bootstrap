@@ -1,3 +1,17 @@
+.newsweek-conversations-header {
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  @extend .d-flex;
+  @extend .pb-3;
+  @extend .pt-4;
+}
+
+.newsweek-conversations-title {
+  @extend .section-title;
+  @extend .ml-2;
+  @extend .pb-0;
+}
+
 .newsweek-conversations {
   background-color: rgb(0, 0, 0);
 
@@ -32,24 +46,73 @@
 .newsweek-conversation-top-image {
   position: relative;
 
-  & .overlayContent {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  img {
+    @extend .img-fluid;
   }
 
-  & .play-icon {
+  .play-icon {
     color: rgb(255, 255, 255);
     background-color: #fd0100;
   }
 
-  & .play-icon-large {
+  .play-icon-large {
     font-size: 60px;
   }
 
-  & .play-icon-small {
+  .play-icon-small {
     font-size: 40px;
 
     transform: translateX(15px);
+  }
+
+  .overlayContent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    span {
+      @extend .play-icon;
+      @extend .play-icon-large;
+    }
+  }
+}
+
+.newsweek-conversation-top-details {
+  @extend .p-3;
+}
+
+.newsweek-conversation-top-summary {
+  @extend .mb-2;
+}
+
+.newsweek-conversation {
+  @extend .conversation-border;
+  @extend .align-items-center;
+  @extend .row;
+}
+
+.newsweek-conversation-image {
+  @extend .col-6;
+
+  img {
+    @extend .img-fluid;
+  }
+
+  .overlayContent {
+    span {
+      @extend .play-icon-small;
+      @extend .play-icon;
+    }
+  }
+}
+
+.newsweek-conversation-details {
+  @extend .col;
+  @extend .p-3;
+}
+
+.newsweek-conversation-title {
+  h4 {
+    @extend .mb-0;
   }
 }
