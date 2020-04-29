@@ -29,14 +29,15 @@
 .culture-travel
   .block-title Culture & Travel
 
-  each article in articles
-    .culture-travel-article
-      .culture-travel-article-image
-        img.img-fluid(src=article.image)
-      .culture-travel-card
-        .culture-travel-article-title
-          h5.mb-2= article.title
-        .culture-travel-article-summary
-          p= article.summary
-        .culture-travel-article-tags
-          p= article.tags
+  .row
+    each article in articles
+      .culture-travel-article.col-md-6
+        .culture-travel-article-image
+          img.img-fluid(src=article.image)
+        .culture-travel-card
+          .culture-travel-article-title
+            h5.mb-2= article.title
+          .culture-travel-article-summary
+            p= article.summary
+          .culture-travel-article-tags
+            p= article.tags

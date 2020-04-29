@@ -1,9 +1,8 @@
-const purgecss = require("@fullhuman/postcss-purgecss");
+const purgeCSS = require("@fullhuman/postcss-purgecss");
 
 module.exports = {
   plugins: [
-    purgecss({
-      content: ["source/**/*.*"],
-    }),
+    // FIXME: Enable CSS Optimization After Project Completion
+    // purgeCSS({ content: ["source/**/*.*"] })
   ],
 };

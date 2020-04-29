@@ -53,11 +53,12 @@
   ]
 
 .section-title More Stories
-each article in featured
-  article.more-stories.pt-3.pb-0
-    .more-stories-image.pr-1.mr-2
-      img.img-fluid(src=article.image, loading="lazy")
-    .more-stories-title.pl-1
-      p.more-stories-title.font-roboto.mb-0= article.title
-    .more-stories-summary.pt-2
-      p.more-stories-summary.font-13= article.summary
+.col
+  each article in featured
+    article.more-stories.pt-3.pb-0
+      .more-stories-image.pr-1.mr-2
+        img.img-fluid(src=article.image, loading="lazy")
+      .more-stories-title.pl-1
+        p.more-stories-title.font-roboto.mb-0= article.title
+      .more-stories-summary.pt-2
+        p.more-stories-summary.font-13= article.summary
