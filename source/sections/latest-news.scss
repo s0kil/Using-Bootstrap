@@ -15,6 +15,7 @@
 
 .latest-news-article-image {
   @extend .col-5;
+  @extend .col-md-3;
 
   img {
     @extend .img-fluid;

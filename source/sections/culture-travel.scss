@@ -16,7 +16,9 @@
 }
 
 .culture-travel-article-image {
-  @extend .img-fluid;
+  img {
+    @extend .img-fluid;
+  }
 }
 
 .culture-travel-card {

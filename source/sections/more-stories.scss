@@ -4,6 +4,7 @@
 
 .more-stories {
   @extend .col;
+  @extend .row;
 }
 
 .more-story {
@@ -14,8 +15,8 @@
 }
 
 .more-story-image {
-  @extend .pr-1;
-  @extend .mr-2;
+  @extend .pl-0;
+  @extend .col-md-5;
 
   float: left;
 
@@ -44,6 +45,6 @@
   @extend .pt-2;
 
   p {
-    @extend .font-13;
+    @extend .font-15;
   }
 }

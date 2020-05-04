@@ -12,8 +12,13 @@
   @extend .pb-0;
 }
 
+.editor-picks {
+  @extend .row;
+}
+
 .editor-pick {
   @extend .pb-4;
+  @extend .col-md-6;
 }
 
 .editor-pick-image {

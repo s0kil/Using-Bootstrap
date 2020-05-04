@@ -9,3 +9,8 @@ window.injectSVG = function (element) {
     },
   });
 };
+
+// Responsive Image Square
+window.squareImage = function (element) {
+  element.style.height = `${element.offsetWidth}px`;
+};

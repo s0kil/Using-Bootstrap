@@ -12,8 +12,13 @@
   @extend .pb-0;
 }
 
+.featured-slideshows {
+  @extend .row;
+}
+
 .featured-slideshow {
   @extend .pb-5;
+  @extend .col-md-4;
 }
 
 .featured-slideshow-image {

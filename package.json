@@ -15,8 +15,8 @@
     "url": "https://github.com/s0kil/Using-Bootstrap/issues"
   },
   "scripts": {
-    "start": "parcel serve source/index.pug --no-cache --no-autoinstall",
-    "build": "parcel build source/index.pug --no-cache --no-autoinstall",
+    "start": "parcel serve source/index.pug --no-source-maps --no-cache --no-autoinstall",
+    "build": "parcel build source/index.pug --no-source-maps --no-cache --no-autoinstall",
     "serve": "python3 -m http.server --directory dist/ 1234",
     "validateHTML": "node-w3c-validator --input ./dist/index.html --format lint > html_validation_result.txt"
   },

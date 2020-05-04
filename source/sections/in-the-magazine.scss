@@ -12,14 +12,20 @@
   @extend .pb-0;
 }
 
+.magazine-articles {
+  @extend .row;
+}
+
+.magazine-article {
+  @extend .col-md-3;
+}
+
 .magazine-article-image {
   position: relative;
 
   img {
     @extend .img-fluid;
 
-    width: 100%;
-    height: 60vw;
     object-fit: cover;
   }
 }
@@ -35,9 +41,6 @@
   left: 0;
   bottom: 0;
   position: absolute;
-}
-
-.magazine-article-categories {
 }
 
 .magazine-article-category {

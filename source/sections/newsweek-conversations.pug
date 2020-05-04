@@ -26,7 +26,7 @@
 
 .newsweek-conversations-header
   .newsweek-icon
-  .newsweek-conversations-title NEWSWEEK CONVERSATIONS
+  .newsweek-conversations-title Newsweek Conversations
 .newsweek-conversations
   .newsweek-conversation-top
     .newsweek-conversation-top-image
@@ -41,14 +41,15 @@
       .newsweek-conversation-top-time
         time= newsweekConversationsTop.time
 
-  each $newsweekConversation in newsweekConversations
-    .newsweek-conversation
-      .newsweek-conversation-image
-        img(src=$newsweekConversation.image)
-        .overlayContent
-          span
-      .newsweek-conversation-details
-        .newsweek-conversation-title
-          h4= $newsweekConversation.title
-        .newsweek-conversation-time
-          time= $newsweekConversation.time
+  .newsweek-conversation-rest
+    each $newsweekConversation in newsweekConversations
+      .newsweek-conversation
+        .newsweek-conversation-image
+          img(src=$newsweekConversation.image)
+          .overlayContent
+            span
+        .newsweek-conversation-details
+          .newsweek-conversation-title
+            h4= $newsweekConversation.title
+          .newsweek-conversation-time
+            time= $newsweekConversation.time
