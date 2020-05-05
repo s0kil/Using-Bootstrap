@@ -1,14 +1,14 @@
 // TODO: Refactor Below
 header.page-header
-  .header-top
+  //- .header-top
 
-  .header-middle.d-flex
-    .col.pt-3.pl-3.pb-3
-      a.header-brand(href="/")
-        span.header-brand
+  .header-middle
+    .header-brand
+      a(href="/")
+        span
           include ../assets/brand-logo.svg
 
-    .col-2.p-0.d-flex.align-items-center.justify-content-end
+    .header-actions
       a.font-roboto.font-bold.font-medium.font-14.header-action.m-1(href="/") Sign In
       a.font-roboto.font-bold.font-medium.font-14.header-action-subscribe(href="/") Subscribe
         span.arrow
@@ -25,3 +25,4 @@ header.page-header
     form.d-none.d-xl-block(action="/", method="post")
       label(for="search")
         input#search(type="text")
+

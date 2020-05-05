@@ -15,14 +15,14 @@
     "url": "https://github.com/s0kil/Using-Bootstrap/issues"
   },
   "scripts": {
-    "start": "parcel serve source/index.pug --no-source-maps --no-cache --no-autoinstall",
-    "build": "parcel build source/index.pug --no-source-maps --no-cache --no-autoinstall",
+    "start": "parcel serve source/index.pug --no-source-maps --no-autoinstall --no-cache --cache-dir /tmp/.parcel-cache",
+    "build": "parcel build source/index.pug --no-source-maps --no-autoinstall --no-cache --cache-dir /tmp/.parcel-cache",
     "serve": "python3 -m http.server --directory dist/ 1234",
     "validateHTML": "node-w3c-validator --input ./dist/index.html --format lint > html_validation_result.txt"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
-    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "@fullhuman/postcss-purgecss": "^2.2.0",
     "@tanem/svg-injector": "^8.0.49",
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
