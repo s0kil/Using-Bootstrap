@@ -26,7 +26,7 @@
     "@tanem/svg-injector": "^8.0.49",
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
-    "jquery": "^3.5.0",
+    "jquery": "^3.5.1",
     "node-w3c-validator": "^1.6.1",
     "parcel": "^2.0.0-nightly.248",
     "pug": "^2.0.4",

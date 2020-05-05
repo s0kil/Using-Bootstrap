@@ -2,9 +2,9 @@ devDependencies:
   '@babel/core': 7.9.6
   '@fullhuman/postcss-purgecss': 2.1.2
   '@tanem/svg-injector': 8.0.49
-  bootstrap: 4.4.1_jquery@3.5.0
+  bootstrap: 4.4.1_jquery@3.5.1
   cssnano: 4.1.10
-  jquery: 3.5.0
+  jquery: 3.5.1
   node-w3c-validator: 1.6.1
   parcel: 2.0.0-nightly.248
   pug: 2.0.4
@@ -2204,7 +2204,7 @@ packages:
   /autoprefixer/9.7.6:
     dependencies:
       browserslist: 4.12.0
-      caniuse-lite: 1.0.30001050
+      caniuse-lite: 1.0.30001051
       chalk: 2.4.2
       normalize-range: 0.1.2
       num2fraction: 1.2.2
@@ -2315,13 +2315,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+  /bn.js/5.1.1:
+    dev: true
+    resolution:
+      integrity: sha512-IUTD/REb78Z2eodka1QZyyEk66pciRcP6Sroka0aI3tG/iwIdYLrBD62RsubR7vqdt3WyX8p4jxeatzmRSphtA==
   /boolbase/1.0.0:
     dev: true
     resolution:
       integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=
-  /bootstrap/4.4.1_jquery@3.5.0:
+  /bootstrap/4.4.1_jquery@3.5.1:
     dependencies:
-      jquery: 3.5.0
+      jquery: 3.5.1
     dev: true
     engines:
       node: '>=6'
@@ -2405,18 +2409,19 @@ packages:
     dev: true
     resolution:
       integrity: sha1-IeCr+vbyApzy+vsTNWenAdQTVSQ=
-  /browserify-sign/4.0.4:
+  /browserify-sign/4.1.0:
     dependencies:
-      bn.js: 4.11.8
+      bn.js: 5.1.1
       browserify-rsa: 4.0.1
       create-hash: 1.2.0
       create-hmac: 1.1.7
       elliptic: 6.5.2
       inherits: 2.0.4
       parse-asn1: 5.1.5
+      readable-stream: 3.6.0
     dev: true
     resolution:
-      integrity: sha1-qk62jl17ZYuqa/alfmMMvXqT0pg=
+      integrity: sha512-VYxo7cDCeYUoBZ0ZCy4UyEUCP3smyBd4DRQM5nrFS1jJjPJjX7rP3oLRpPoWfkhQfyJ0I9ZbHbKafrFD/SGlrg==
   /browserify-zlib/0.2.0:
     dependencies:
       pako: 1.0.11
@@ -2425,9 +2430,9 @@ packages:
       integrity: sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==
   /browserslist/4.12.0:
     dependencies:
-      caniuse-lite: 1.0.30001050
-      electron-to-chromium: 1.3.427
-      node-releases: 1.1.53
+      caniuse-lite: 1.0.30001051
+      electron-to-chromium: 1.3.428
+      node-releases: 1.1.54
       pkg-up: 2.0.0
     dev: true
     hasBin: true
@@ -2521,16 +2526,16 @@ packages:
   /caniuse-api/3.0.0:
     dependencies:
       browserslist: 4.12.0
-      caniuse-lite: 1.0.30001050
+      caniuse-lite: 1.0.30001051
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
     dev: true
     resolution:
       integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==
-  /caniuse-lite/1.0.30001050:
+  /caniuse-lite/1.0.30001051:
     dev: true
     resolution:
-      integrity: sha512-OvGZqalCwmapci76ISq5q4kuAskb1ebqF3FEQBv1LE1kWht0pojlDDqzFlmk5jgYkuZN7MNZ1n+ULwe/7MaDNQ==
+      integrity: sha512-sw8UUnTlRevawTMZKN7vpfwSjCBVoiMPlYd8oT2VwNylyPCBdMAUmLGUApnYYTtIm5JXsQegUAY7GPHqgfDzjw==
   /caseless/0.12.0:
     dev: true
     resolution:
@@ -2956,7 +2961,7 @@ packages:
   /crypto-browserify/3.12.0:
     dependencies:
       browserify-cipher: 1.0.1
-      browserify-sign: 4.0.4
+      browserify-sign: 4.1.0
       create-ecdh: 4.0.3
       create-hash: 1.2.0
       create-hmac: 1.1.7
@@ -3369,10 +3374,10 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==
-  /electron-to-chromium/1.3.427:
+  /electron-to-chromium/1.3.428:
     dev: true
     resolution:
-      integrity: sha512-/rG5G7Opcw68/Yrb4qYkz07h3bESVRJjUl4X/FrKLXzoUJleKm6D7K7rTTz8V5LUWnd+BbTOyxJX2XprRqHD8A==
+      integrity: sha512-u3+5jEfgLKq/hGO96YfAoOAM1tgFnRDTCD5mLuev44tttcXix+INtVegAkmGzUcfDsnzkPt51XXurXZLLwXt0w==
   /elliptic/6.5.2:
     dependencies:
       bn.js: 4.11.8
@@ -4638,10 +4643,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
-  /jquery/3.5.0:
+  /jquery/3.5.1:
     dev: true
     resolution:
-      integrity: sha512-Xb7SVYMvygPxbFMpTFQiHh1J7HClEaThguL15N/Gg37Lri/qKyhRGZYzHRyLH8Stq3Aow0LsHO2O2ci86fCrNQ==
+      integrity: sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
   /js-levenshtein/1.1.6:
     dev: true
     engines:
@@ -5208,10 +5213,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-Lqh7mrByWCM8Cf9UPqpeoVBBo5Ugx+RKu885GAzmLBVYjeywScxHXPGLa4JfYNZmcNGwzR0Glu5/9GaQZMFqyA==
-  /node-releases/1.1.53:
+  /node-releases/1.1.54:
     dev: true
     resolution:
-      integrity: sha512-wp8zyQVwef2hpZ/dJH7SfSrIPD6YoJz6BDQDpGEkcA0s3LpAQoxBIYmfIq6QAhC1DhwsyCgTaTTcONwX8qzCuQ==
+      integrity: sha512-tLzytKpgwKQr37yw9CEODjNM9lnmsNxzlv575GzOZ16AgMvPcJis/DgrJX4UEV1KIYoXk6XoVfY6YaMOPJESAQ==
   /node-w3c-validator/1.6.1:
     dependencies:
       chalk: 2.4.2
@@ -8116,7 +8121,7 @@ specifiers:
   '@tanem/svg-injector': ^8.0.49
   bootstrap: ^4.4.1
   cssnano: ^4.1.10
-  jquery: ^3.5.0
+  jquery: ^3.5.1
   node-w3c-validator: ^1.6.1
   parcel: ^2.0.0-nightly.248
   pug: ^2.0.4
