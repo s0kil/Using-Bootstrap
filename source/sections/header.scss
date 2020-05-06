@@ -13,7 +13,7 @@ $red: #f72210;
   @extend .pt-3;
   @extend .pl-3;
   @extend .pb-3;
-  @extend .col;
+  @extend .col-6;
 
   span {
     display: block;
@@ -33,37 +33,48 @@ $red: #f72210;
   @extend .justify-content-end;
   @extend .align-items-center;
   @extend .d-flex;
-  @extend .col-2;
+  @extend .col-6;
   @extend .p-0;
 }
 
-.header-action {
+.header-singin {
+  @extend .font-roboto;
+  @extend .font-medium;
+  @extend .font-bold;
+  @extend .font-14;
+
   color: white;
   margin-right: 0.2rem;
   text-transform: uppercase;
 }
 
-.header-action-subscribe {
+.header-subscribe {
+  @extend .font-roboto;
+  @extend .font-medium;
+  @extend .font-bold;
+  @extend .font-14;
+
   color: $red;
   background: white;
   text-transform: uppercase;
   padding: 0.2em;
 
-  & .arrow {
+  .arrow {
     display: none;
     font-size: 18px;
     transform: rotate(90deg);
   }
 
   @media screen and (min-width: 481px) {
-    & .arrow {
+    .arrow {
       display: inline-block;
     }
   }
 }
 
 .menu-icon {
-  margin: auto;
+  @extend .m-1;
+
   color: #fb9a94;
 
   svg {

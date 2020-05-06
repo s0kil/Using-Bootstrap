@@ -28,7 +28,7 @@
     "cssnano": "^4.1.10",
     "jquery": "^3.5.1",
     "node-w3c-validator": "^1.6.1",
-    "parcel": "^2.0.0-nightly.248",
+    "parcel": "^2.0.0-nightly.250",
     "pug": "^2.0.4",
     "sass": "^1.26.5",
     "stylelint": "^13.3.3",
