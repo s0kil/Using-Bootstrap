@@ -29,13 +29,14 @@
 
 ## Getting Started
 
-_Prerequisites_
+**Prerequisites**
 
 - `pnpm install` to install dependencies
 
 **Dev Mode**:
 
 - `npm run start` to start dev server
+- The `#debug` ID is available during development, add the ID to any section for easier development.
 
 **Build Production**:
 

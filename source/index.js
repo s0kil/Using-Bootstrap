@@ -14,3 +14,18 @@ window.injectSVG = function (element) {
 window.squareImage = function (element) {
   element.style.height = `${element.offsetWidth}px`;
 };
+
+// Enable `#debug` Symbol During Development
+if (process.env.NODE_ENV === "development") {
+  document.addEventListener("DOMContentLoaded", () => {
+    const debugSymbol = document.getElementById("debug");
+    if (debugSymbol) {
+      const siblings = [...debugSymbol.parentElement.children];
+      siblings.forEach((sibling) => {
+        if (sibling !== debugSymbol) {
+          sibling.style.display = "none";
+        }
+      });
+    }
+  });
+}
