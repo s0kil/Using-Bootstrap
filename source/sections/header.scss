@@ -1,9 +1,8 @@
 $red: #f72210;
+$light-gray: #f4f5f6;
+$dark-gray: #d9d9d9;
 
-.page-header {
-}
-
-.header-middle {
+.page-header-top {
   @extend .d-flex;
 
   background: $red;
@@ -84,10 +83,78 @@ $red: #f72210;
   }
 }
 
-.header-bottom {
-  display: none;
+.page-header-bottom {
+  @extend .d-flex;
 
-  @media screen and (min-width: 992px) {
-    display: block;
+  background: white;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: $light-gray;
+
+  ul {
+    @extend .list-group-horizontal;
+    @extend .list-group;
+
+    li {
+      @extend .list-group-item;
+      @extend .nav-item;
+      @extend .border-0;
+      @extend .ml-1;
+      @extend .mr-1;
+
+      a {
+        @extend .font-bold;
+
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
   }
+
+  form {
+    @extend .position-relative;
+
+    input {
+      width: 90px;
+      height: 54px;
+      border: none;
+      height: 100%;
+      outline: none;
+    }
+
+    label {
+      @extend .position-absolute;
+
+      top: 12px;
+      right: 0px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.nav-separator {
+  @extend .d-flex;
+
+  height: 24px;
+  align-self: center;
+  border-left: 1px solid $dark-gray;
+}
+
+.nav-corner-cutoff {
+  @extend .position-absolute;
+
+  width: 78px;
+  right: 31px;
+  height: 13px;
+  background: $red;
+  border-top: 13px solid $red;
+  border-left: 12px solid white;
 }

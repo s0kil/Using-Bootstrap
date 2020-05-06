@@ -1,8 +1,19 @@
-// TODO: Refactor Below
-header.page-header
-  //- .header-top
+-
+  const navItems = [
+    "U.S.",
+    "World",
+    "Business",
+    "Tech & Science",
+    "Culture", "Newsgeek",
+    "Sports",
+    "Health",
+    "The Debate",
+    "Vantage"
+  ]
+  const lastNavItem = navItems.slice(-1)[0]
 
-  .header-middle
+div.page-header
+  header.page-header-top
     .header-brand
       a(href="/")
         span
@@ -15,14 +26,17 @@ header.page-header
       span.menu-icon
         +iconGeneral("menu")
 
-  nav.header-bottom
-  div
-    ul.page-nav.list-group.list-group-horizontal
-      each navItem in ["U.S.", "World", "Business", "Tech & Science", "Culture", "Newsgeek", "Sports", "Health", "The Debate", "Vantage"]
-        li.nav-item.list-group-item.d-none.d-xl-block
-          a(href="/")= navItem
+  nav.page-header-bottom
+    ul
+      each $navItem in navItems
+        li
+          a(href="/")= $navItem
+        if $navItem !== lastNavItem
+          .nav-separator
 
-    form.d-none.d-xl-block(action="/", method="post")
+    form(action="/", method="post")
       label(for="search")
-        input#search(type="text")
+        img.icon.invisible(src="https://g.newsweek.com/www/images/icon-search-glass.svg", alt="Search Icon", onload="injectSVG(this)")
+      input#search(type="text", name="search", placeholder="Search")
 
+    .nav-corner-cutoff
