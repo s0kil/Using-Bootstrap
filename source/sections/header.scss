@@ -84,6 +84,7 @@ $dark-gray: #d9d9d9;
 }
 
 .page-header-bottom {
+  @extend .position-relative;
   @extend .d-flex;
 
   background: white;
@@ -152,7 +153,7 @@ $dark-gray: #d9d9d9;
   @extend .position-absolute;
 
   width: 78px;
-  right: 31px;
+  right: 0px;
   height: 13px;
   background: $red;
   border-top: 13px solid $red;
