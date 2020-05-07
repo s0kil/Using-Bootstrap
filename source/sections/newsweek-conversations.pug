@@ -30,22 +30,19 @@
 .newsweek-conversations
   .newsweek-conversation-top
     .newsweek-conversation-top-image
-      img(src=newsweekConversationsTop.image)
+      img(src=newsweekConversationsTop.image, alt=newsweekConversationsTop.title)
       .overlay-content
         span
     .newsweek-conversation-top-details
-      .newsweek-conversation-top-title
-        h3= newsweekConversationsTop.title
-      .newsweek-conversation-top-summary
-        summary= newsweekConversationsTop.summary
-      .newsweek-conversation-top-time
-        time= newsweekConversationsTop.time
+      h3.newsweek-conversation-top-title= newsweekConversationsTop.title
+      summary.newsweek-conversation-top-summary= newsweekConversationsTop.summary
+      time.newsweek-conversation-top-time= newsweekConversationsTop.time
 
   .newsweek-conversation-rest
     each $newsweekConversation in newsweekConversations
       .newsweek-conversation
         .newsweek-conversation-image
-          img(src=$newsweekConversation.image)
+          img(src=$newsweekConversation.image, alt=$newsweekConversation.title)
           .overlayContent
             span
         .newsweek-conversation-details

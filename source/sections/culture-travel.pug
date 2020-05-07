@@ -33,7 +33,7 @@
     each $article in articles
       .culture-travel-article
         .culture-travel-article-image
-          img(src=$article.image)
+          img(src=$article.image, alt=$article.title)
         .culture-travel-card
           .culture-travel-article-title
             h5= $article.title

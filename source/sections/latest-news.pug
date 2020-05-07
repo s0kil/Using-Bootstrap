@@ -35,6 +35,6 @@
   each $latestNewsArticle in latestNewsArticles
     .latest-news-article
       .latest-news-article-image
-        img(src=$latestNewsArticle.image)
+        img(src=$latestNewsArticle.image, alt=$latestNewsArticle.title)
       .latest-news-article-title
         p= $latestNewsArticle.title

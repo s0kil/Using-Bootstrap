@@ -40,7 +40,7 @@
   each $slideshow in featuredSlideshows
     .featured-slideshow
       .featured-slideshow-image
-        img(src=$slideshow.image)
+        img(src=$slideshow.image, alt=$slideshow.title)
         +overlayContent
           span.slideshow-count= $slideshow.slideshowCount
       .featured-slideshow-title

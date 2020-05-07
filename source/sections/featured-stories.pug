@@ -63,7 +63,7 @@
   each $featuredStory in featuredStories
     .featured-story
       .featured-story-image
-        img(src=$featuredStory.image)
+        img(src=$featuredStory.image, alt=$featuredStory.title)
         if $featuredStory.sponsored
           .featured-story-sponsored
             +overlayContent($featuredStory.category)

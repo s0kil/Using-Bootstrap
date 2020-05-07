@@ -37,7 +37,7 @@
   each $opinionArticle in opinionArticles
     .opinion-article
       .opinion-article-image
-        img(src=$opinionArticle.headShotImage)
+        img(src=$opinionArticle.headShotImage, alt=$opinionArticle.title)
       .opinion-article-body
         .opinion-article-title= $opinionArticle.title
         .opinion-article-author= $opinionArticle.author

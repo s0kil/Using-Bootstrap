@@ -58,9 +58,7 @@
   each $pickedArticle in editorsPickArticles
     .editor-pick
       .editor-pick-image
-        img(src=$pickedArticle.image)
+        img(src=$pickedArticle.image, alt=$pickedArticle.title)
         +overlayContent($pickedArticle.category)
-      .editor-pick-title
-        h3= $pickedArticle.title
-      .editor-pick-summary
-        summary= $pickedArticle.summary
+      h3.editor-pick-title= $pickedArticle.title
+      summary.editor-pick-summary= $pickedArticle.summary

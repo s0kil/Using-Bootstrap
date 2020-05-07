@@ -44,7 +44,7 @@
   each $magazineArticle in magazineArticles
     .magazine-article
       .magazine-article-image
-        img(src=$magazineArticle.image, onload="squareImage(this)")
+        img(src=$magazineArticle.image, alt=$magazineArticle.title, onload="squareImage(this)")
         span.magazine-article-image-overlay= $magazineArticle.categories.shift()
       .magazine-article-categories
         each $magazineArticleCategory in $magazineArticle.categories

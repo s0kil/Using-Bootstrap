@@ -57,7 +57,7 @@
   each $story in moreStories
     article.more-story
       .more-story-image
-        img(src=$story.image)
+        img(src=$story.image, alt=$story.title)
       .more-story-title
         p= $story.title
       .more-story-summary
