@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  extends: "stylelint-config-recommended",
+  extends: ["stylelint-config-recommended", "stylelint-config-sass-guidelines"],
   rules: {
     "at-rule-empty-line-before": [
       "always",
@@ -120,5 +120,8 @@ module.exports = {
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
+    "scss/at-extend-no-missing-placeholder": null,
+    "max-nesting-depth": null,
+    "selector-max-compound-selectors": null,
   },
 };

@@ -61,8 +61,8 @@
   }
 
   .play-icon {
-    color: rgb(255, 255, 255);
     background-color: #fd0100;
+    color: rgb(255, 255, 255);
   }
 
   .play-icon-large {
@@ -71,14 +71,13 @@
 
   .play-icon-small {
     font-size: 40px;
-
     transform: translateX(15px);
   }
 
-  .overlayContent {
-    position: absolute;
+  .overlay-content {
     bottom: 0;
     left: 0;
+    position: absolute;
 
     span {
       @extend .play-icon;
@@ -108,7 +107,7 @@
     @extend .img-fluid;
   }
 
-  .overlayContent {
+  .overlay-content {
     span {
       @extend .play-icon-small;
       @extend .play-icon;

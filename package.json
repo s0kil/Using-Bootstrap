@@ -19,7 +19,7 @@
     "build": "parcel build source/index.pug --no-source-maps --no-autoinstall --no-cache --cache-dir /tmp/.parcel-cache",
     "serve": "python3 -m http.server --directory dist/ 1234",
     "validateHTML": "node-w3c-validator --input ./dist/index.html --format lint > html_validation_result.txt",
-    "lint": "stylelint source/**"
+    "lint": "stylelint source/**/*.scss --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

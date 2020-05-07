@@ -5,8 +5,8 @@
 .top-story-image {
   @extend .position-relative;
 
-  min-height: 33px;
   margin-bottom: 10px;
+  min-height: 33px;
 
   img {
     @extend .img-fluid;

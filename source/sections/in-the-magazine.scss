@@ -31,24 +31,23 @@
 }
 
 .magazine-article-image-overlay {
-  font: bold 16px/26px "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
   background-color: #f72210;
+  bottom: 0;
+  color: $white;
+  font: bold 16px/26px 'Roboto Condensed', sans-serif;
+  left: 0;
   margin-right: 7px;
   padding: 0 7px;
-  color: white;
-
-  left: 0;
-  bottom: 0;
   position: absolute;
+  text-transform: uppercase;
 }
 
 .magazine-article-category {
-  font: bold 16px/26px "Roboto Condensed", sans-serif;
   color: #f72210;
-  text-transform: uppercase;
-  margin-top: 10px;
+  font: bold 16px/26px 'Roboto Condensed', sans-serif;
   margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 .magazine-article-categories {

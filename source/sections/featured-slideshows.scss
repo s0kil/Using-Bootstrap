@@ -37,18 +37,19 @@
 }
 
 .slideshow-count {
-  width: 70px;
-  height: 52px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 58px;
-  text-indent: 5px;
-  text-align: center;
-  background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png)
+  background:
+    url('https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png')
     0 0 / contain no-repeat;
+  bottom: 0;
   color: #e9212e;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  height: 52px;
+  left: 0;
+  line-height: 58px;
+  position: absolute;
+  text-align: center;
+  text-indent: 5px;
+  width: 70px;
 }

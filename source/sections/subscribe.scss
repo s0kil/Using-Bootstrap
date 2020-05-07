@@ -14,11 +14,10 @@
   @extend .pt-4;
   @extend .row;
 
-  max-height: 400px;
-
+  background-color: #f4f5f6;
   border: 0;
   border-radius: 0;
-  background-color: #f4f5f6;
+  max-height: 400px;
 
   .offset-top {
     position: absolute;
@@ -32,7 +31,7 @@
   @extend .col-lg-4;
   @extend .row;
 
-  & :nth-child(2) {
+  &:nth-child(2) {
     @extend .offset-4;
     @extend .offset-top;
   }
