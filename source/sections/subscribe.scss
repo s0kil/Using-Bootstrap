@@ -7,10 +7,14 @@
 }
 
 .subscribe {
+  @extend .no-gutters;
   @extend .card;
   @extend .pl-3;
   @extend .pr-3;
   @extend .pt-4;
+  @extend .row;
+
+  max-height: 400px;
 
   border: 0;
   border-radius: 0;
@@ -25,6 +29,7 @@
 .subscribe-images {
   @extend .position-relative;
   @extend .card-img-top;
+  @extend .col-lg-4;
   @extend .row;
 
   & :nth-child(2) {
@@ -38,6 +43,8 @@
 
   img {
     @extend .img-fluid;
+
+    max-height: 170px;
   }
 }
 
@@ -45,6 +52,8 @@
   @extend .text-center;
   @extend .card-body;
   @extend .container;
+  @extend .col-lg-4;
+  @extend .row;
 
   h3 {
     @extend .card-title;
