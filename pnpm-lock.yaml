@@ -10,6 +10,7 @@ devDependencies:
   pug: 2.0.4
   sass: 1.26.5
   stylelint: 13.3.3
+  stylelint-config-recommended: 3.0.0_stylelint@13.3.3
   stylelint-config-sass-guidelines: 7.0.0_stylelint@13.3.3
   stylelint-config-standard: 20.0.0_stylelint@13.3.3
 lockfileVersion: 5.1
@@ -8127,5 +8128,6 @@ specifiers:
   pug: ^2.0.4
   sass: ^1.26.5
   stylelint: ^13.3.3
+  stylelint-config-recommended: ^3.0.0
   stylelint-config-sass-guidelines: ^7.0.0
   stylelint-config-standard: ^20.0.0
