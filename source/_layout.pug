@@ -52,13 +52,14 @@ main.container-fluid.pt-4
   section(style={"grid-area": "featured-slideshows"})
     include sections/featured-slideshows
 
-  //- Subscribe
-  section(style={"grid-area": "subscribe"})
-    include sections/subscribe
-
-  //- Newsletter
-  section(style={"grid-area": "newsletter"})
-    include sections/newsletter
+  //- Subscribe & Newsletter
+  //- TODO: Rethink & Refactor
+  section(style={"grid-area": "subscribe-newsletter"})
+    .row
+      .col-lg-8
+        include sections/subscribe
+      .col-lg-4
+        include sections/newsletter
 
 //- Footer
 include sections/footer

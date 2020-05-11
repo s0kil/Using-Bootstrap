@@ -8,40 +8,50 @@
 }
 
 .newsletter {
-  .card,
-  .card * {
-    border: 0;
-    border-radius: 0;
-  }
+  @extend .card;
+  @extend .mb-3;
+}
 
-  .card-body {
-    border: 1px solid #ebebeb;
-  }
+.newsletter-wrapper {
+  @extend .no-gutters;
+  @extend .row;
 }
 
 .newsletter-item {
-  @extend .text-center;
-  @extend .card;
+  @extend .col-md-4;
+  @extend .col-lg-6;
+  @extend .p-0;
 
   img {
-    @extend .card-img-top;
+    @extend .card-img;
+
+    height: 100%;
+    object-fit: cover;
   }
+}
+
+.card-body-wrapper {
+  @extend .col-md-8;
+  @extend .col-lg-6;
 }
 
 .newsletter-item-body {
   @extend .card-body;
+  @extend .row;
 
   h3 {
-    @extend .mb-3;
+    @extend .card-title;
+    @extend .col-lg-12;
   }
 
   p {
-    @extend .font-15;
-    @extend .mb-4;
+    @extend .card-text;
+    @extend .col-lg-12;
   }
 
   a {
     @extend .call-to-action-button;
+    @extend .m-3;
     @extend .p-2;
   }
 }
