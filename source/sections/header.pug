@@ -32,8 +32,8 @@ div.page-header
       each $navItem in navItems
         li
           a(href="/")= $navItem
-        if $navItem !== lastNavItem
-          .nav-separator
+          if $navItem !== lastNavItem
+            span.nav-separator
 
     form(action="/", method="post")
       label(for="search")
