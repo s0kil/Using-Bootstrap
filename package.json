@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "parcel serve source/index.pug --no-source-maps --no-autoinstall --no-cache --cache-dir /tmp/.parcel-cache",
-    "build": "parcel build source/index.pug --no-source-maps --no-autoinstall --no-cache --cache-dir /tmp/.parcel-cache",
+    "build": "rm -rf dist && parcel build source/index.pug --no-source-maps --no-autoinstall --no-cache --cache-dir /tmp/.parcel-cache",
     "serve": "python3 -m http.server --directory dist/ 1234",
     "validateHTML": "node-w3c-validator --input ./dist/index.html --format lint > html_validation_result.txt",
     "lint": "stylelint source/**/*.scss --fix"
