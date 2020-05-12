@@ -1,0 +1,33 @@
+.newsletter-sign-up {
+  @extend .p-4;
+  @extend .mb-5;
+
+  margin: 2em auto;
+
+  max-width: 300px;
+  background-color: #f4f5f6;
+  border: 1px solid #e5e5e5;
+}
+
+.newsletter-sign-up-title {
+  @extend .mb-3;
+
+  text-transform: uppercase;
+  font: bold 19px/19px "Roboto Condensed", sans-serif;
+}
+
+.newsletter-sign-up-button {
+  @extend .text-center;
+  @extend .mb-2;
+
+  color: white;
+  background-color: #666;
+  text-transform: uppercase;
+  padding: 10px 10px 10px 12px;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+}
+
+.newsletter-sign-up-preferences {
+  color: #333;
+  font: bold 15px/15px "Roboto Condensed", sans-serif;
+}
