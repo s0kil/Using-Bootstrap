@@ -1,0 +1,58 @@
+-
+  const magazineArticles = [
+    {
+      title: "See All Features >",
+      image: "https://d.newsweek.com/en/full/1585087/may-08-15-2020-cover.jpg",
+      categories: ["", "May 15 ISSUE"]
+    },
+    {
+      title: "Black China: Africa's First Superpower Is Coming Sooner Than You Think",
+      image: "https://d.newsweek.com/en/full/1559646/fe-nigeria-01-523787136-banner.jpg",
+      categories: ["Cover", "World"],
+    },
+    {
+      title: "The Iran Crisis Comes With Serious Risks for America's Economy",
+      image: "https://d.newsweek.com/en/full/1559668/fe-iran-01-1192553955-banner.jpg",
+      categories: ["Features", "World"],
+    },
+    {
+      title: "Got Holiday Debt? Pay Off Your Credit Cards Quickly with These 5 Tips",
+      image: "https://d.newsweek.com/en/full/1558983/wirecutter-credit-card-debt.jpg",
+      categories: ["Periscope", "Business"],
+    },
+    {
+      title: "Meghan Markle Being a Black Woman in Royal Family Was Never Going to Work",
+      image: "https://d.newsweek.com/en/full/1559784/per-meghanmarklemutiny-1198091143-banner.jpg",
+      categories: ["Periscope", "Culture"],
+    },
+    {
+      title: "Historian Anne de Courcy on What We Can Learn From Coco Chanel",
+      image: "https://d.newsweek.com/en/full/1559828/cul-chanelqanda-56226855-banner.jpg",
+      categories: ["Downtime", "Culture"],
+    },
+    {
+      title: "Women Changemakers of the Last Century",
+      image: "https://d.newsweek.com/en/full/1559766/cul-map-1097506118-banner.jpg",
+      categories: ["Downtime", "Culture"],
+    },
+    {
+      title: "Night Terror",
+      image: "https://d.newsweek.com/en/full/1559861/night-terror.jpg",
+      categories: ["In Focus"],
+    }
+  ]
+
+.magazine-articles-header
+  .newsweek-icon
+  .magazine-articles-title IN THE MAGAZINE
+.magazine-articles
+  each $magazineArticle in magazineArticles
+    .magazine-article
+      .magazine-article-image
+        img(src=$magazineArticle.image, alt=$magazineArticle.title, onload="squareImage(this)")
+        span.magazine-article-image-overlay= $magazineArticle.categories.shift()
+      .magazine-article-categories
+        each $magazineArticleCategory in $magazineArticle.categories
+          span.magazine-article-category= $magazineArticleCategory
+      .magazine-article-title
+        h5= $magazineArticle.title

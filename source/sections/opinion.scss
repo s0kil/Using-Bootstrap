@@ -1,0 +1,40 @@
+.opinion-articles-title {
+  @extend .section-title;
+}
+
+.opinion-articles {
+  &:not(:last-child).separator {
+    border-top: 1px solid #ddd;
+  }
+}
+
+.opinion-article {
+  @extend .pb-3;
+  @extend .row;
+}
+
+.opinion-article-image {
+  @extend .col-3;
+  @extend .col-md-2;
+  @extend .col-lg-4;
+
+  img {
+    @extend .img-fluid;
+    @extend .rounded;
+  }
+}
+
+.opinion-article-body {
+  @extend .col;
+  @extend .p-0;
+
+  font: bold 17px/21px 'Roboto Condensed', sans-serif;
+}
+
+.opinion-article-author {
+  color: #555;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 4px;
+  text-transform: uppercase;
+}

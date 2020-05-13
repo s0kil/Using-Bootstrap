@@ -1,0 +1,25 @@
+.top-story-title {
+  @extend .section-title;
+}
+
+.top-story-image {
+  @extend .position-relative;
+
+  margin-bottom: 10px;
+  min-height: 33px;
+
+  img {
+    @extend .img-fluid;
+  }
+}
+
+.top-story-body {
+  h1 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,43 @@
+-
+  const opinionArticles = [
+    {
+      author: "Ryan Thomas",
+      title: "Republican Lawmakers' Blind Loyalty to Trump Is a Case Study in Cowardice",
+      headShotImage: "https://d.newsweek.com/en/full/1503272/ryan-thomas.png"
+    },
+    {
+      author: "Michael E. Mann",
+      title: "When It Comes to the Australian Bushfires, Rupert Murdoch Is an Arsonist",
+      headShotImage: "https://d.newsweek.com/en/full/110048/michael-e-mann.png"
+    },
+    {
+      author: "Newt Gingrich",
+      title: "2020 Could Be a Banner Year for House Republicans",
+      headShotImage: "https://d.newsweek.com/en/full/83499/newt-gingrich.png"
+    },
+    {
+      author: "Serra Sippel",
+      title: "Trump's Iran Attack Fits Right Into His Administration's Evangelical Priorities",
+      headShotImage: "https://d.newsweek.com/en/full/1504484/serra-sippel.png"
+    },
+    {
+      author: "Anders Fogh Rasmussen",
+      title: "At the Taiwan Election, China Has Entered the Global Meddling Game",
+      headShotImage: "https://d.newsweek.com/en/full/1560094/anders-fogh-rasmussen.png"
+    },
+    {
+      author: "Beatrice Maneshi",
+      title: "Calling Iran a Terrorist Nation Is a Dangerous Justification",
+      headShotImage: "https://d.newsweek.com/en/full/1559723/beatrice-maneshi.png"
+    }
+  ]
+
+h2.opinion-articles-title OPINION
+.opinion-articles
+  each $opinionArticle in opinionArticles
+    .opinion-article
+      .opinion-article-image
+        img(src=$opinionArticle.headShotImage, alt=$opinionArticle.title)
+      .opinion-article-body
+        .opinion-article-title= $opinionArticle.title
+        .opinion-article-author= $opinionArticle.author

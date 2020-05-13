@@ -1,0 +1,16 @@
+-
+  const topStory = {
+    category: "world",
+    image: "https://d.newsweek.com/en/full/1560048/cyberattack-iran-us.jpg",
+    title: "This Is What an Iranian Cyberattack on the U.S. Would Look Like",
+    summary: "Tehran could cause significant disruption with cyber attacks against the U.S. government, companies, high-profile individuals—and possibly even the 2020 elections."
+  }
+
+h2.top-story-title Top Story
+article.top-story
+  .top-story-image
+    img(src=topStory.image, alt=topStory.title)
+    +overlayContent(topStory.category)
+  .top-story-body
+    h1= topStory.title
+    p= topStory.summary

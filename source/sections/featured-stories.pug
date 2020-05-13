@@ -1,0 +1,82 @@
+-
+  const featuredStories = [
+    {
+      title: "The Starting 5: Impeachment, Trade Deal, Pro Football Hall of Fame and More",
+      image: "https://d.newsweek.com/en/full/1560079/house-speaker-nancy-pelosi.jpg",
+      summary: "The first Democratic debate of the year has come and gone and now is the time to enjoy the 24 glorious days there will be before the next debate.",
+      category: "News",
+      sponsored: false,
+    },
+    {
+      title: "Sanders Will Benefit if Warren Drops Out, Pollsters Say—But Enough to Win?",
+      image: "https://d.newsweek.com/en/full/1560204/elizabeth-warren-bernie-sanders-post-debate-iowa.jpg",
+      summary: "Supporters of the left-wing candidates were not necessarily transferable from one to the other, said one pollster.",
+      category: "U.S.",
+      sponsored: false,
+    },
+    {
+      title: "North Korea is Holding a Crypto Conference, and it's a Bad Idea to Attend",
+      image: "https://d.newsweek.com/en/full/1560217/kim-jong-un.jpg",
+      summary: "\"The DPRK can be considered the safest country in the world. As long as you have a basic common-sense and respect for the culture,\" the conference website claims. The U.N. disagrees.",
+      category: "Tech & Science",
+      sponsored: false,
+    },
+    {
+      title: "Smoke From Australia Fires Has Now Reached the Stratosphere, NASA Says",
+      image: "https://d.newsweek.com/en/full/1559941/australia-fires-iss.jpg",
+      summary: "Since September last year, hundreds of fires have burned millions of hectares in Australia, leaving at least 28 people dead.",
+      category: "Tech & Science",
+      sponsored: false,
+    },
+    {
+      title: "Nurses - The Real Medical Heroes of 2020",
+      image: "https://d.newsweek.com/en/full/1551968/university-texas-el-paso.jpg",
+      summary: "We’re used to doctors bustling in and out when in hospital, but it’s the reassuring presence and professionalism of the nursing staff that we rely on. What sets the best ones apart?",
+      category: "SPONSORED INSIGHT",
+      sponsored: true,
+    },
+    {
+      title: "What Can a Career in Architecture Do For You?",
+      image: "https://d.newsweek.com/en/full/1544368/thomas-jefferson-university.jpg",
+      summary: "Architects do much more than plan and design houses, factories, office buildings, and other structures. You might be surprised how diverse the career can be. Find out more.",
+      category: "SPONSORED INSIGHT",
+      sponsored: true,
+    },
+    {
+      title: "Meet Jerry O'Connell in NY",
+      image: "https://d.newsweek.com/en/full/1555316/meet-jerry-oconnell-new-york-city.png",
+      summary: "Win a trip for two to the Big Apple for a special meet and greet!",
+      category: "SPONSORED INSIGHT",
+      sponsored: true,
+    },
+    {
+      title: "If You or a Loved One Has Been Injured, Who Can Champion Your Cause?",
+      image: "https://d.newsweek.com/en/full/1553562/kisling-revised-image.jpg",
+      summary: "Logic dictates that when you need a good personal injury attorney, you’re going to be in a stressful, vulnerable and overwhelming situation. It is vital that you speak to an attorney who can ensure that you are not taken advantage of. We look at some of the leaders in the field.",
+      category: "SPONSORED INSIGHT",
+      sponsored: true,
+    }
+  ]
+
+.featured-stories-title FEATURED STORIES
+.featured-stories
+  each $featuredStory in featuredStories
+    .featured-story
+      .featured-story-image
+        img(src=$featuredStory.image, alt=$featuredStory.title)
+        if $featuredStory.sponsored
+          .featured-story-sponsored
+            +overlayContent($featuredStory.category)
+        else
+          +overlayContent($featuredStory.category)
+      if $featuredStory.sponsored
+        .featured-story-info
+          .featured-story-title
+            h3= $featuredStory.title
+          .featured-story-summary
+            p= $featuredStory.summary
+      else
+        .featured-story-title
+          h3= $featuredStory.title
+        .featured-story-summary
+          p= $featuredStory.summary

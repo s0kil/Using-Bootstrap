@@ -1,0 +1,37 @@
+.featured-stories-title {
+  @extend .section-title;
+}
+
+.featured-story {
+  @extend .pb-4;
+}
+
+.featured-story-sponsored {
+  .overlay-content {
+    color: #3581f4;
+  }
+}
+
+.featured-story-image {
+  @extend .position-relative;
+
+  img {
+    @extend .img-fluid;
+
+    width: 100%;
+  }
+}
+
+.featured-story-info {
+  @extend .p-3;
+
+  border: 1px solid #e6e6e6;
+}
+
+.featured-story-title {
+  @extend .mt-2;
+}
+
+.featured-story-summary {
+  @extend .font-13;
+}

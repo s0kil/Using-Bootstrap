@@ -1,0 +1,15 @@
+-
+  const IconPack = {
+    Feather: "/npm/feather-icons@4.28.0/dist/icons/",
+    Simple: "/npm/simple-icons@2.9.0/icons/"
+  }
+
+  function iconURL(basePath, iconName) {
+    return `https://cdn.jsdelivr.net${basePath}${iconName}.svg`;
+  }
+
+mixin iconGeneral(iconName)
+  img.icon.icon-general.invisible(src=iconURL(IconPack.Feather, iconName), alt=iconName, onload="injectSVG(this)")
+
+mixin iconSocial(iconName)
+  img.icon.icon-social.invisible(src=iconURL(IconPack.Simple, iconName), alt=iconName, onload="injectSVG(this)")

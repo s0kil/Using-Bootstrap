@@ -1,0 +1,52 @@
+-
+  const newsweekConversationsTop = {
+    title: "The Vampire Diaries' Paul Wesley Talks Fame, Directing and CBS' 'Tell Me a Story'",
+    image: "https://d.newsweek.com/en/full/1555347/newsweek-conversations-paul-wesley.jpg",
+    summary: "\"I try my best not to drink the Kool-Aid too much, because that can be a slippery slope,\" Paul Wesley said about dealing with fame.",
+    time: "20:00"
+  }
+
+  const newsweekConversations = [
+    {
+      title: "'American Horror Story's' Leslie Grossman Is the Definition of a Great Hollywood Character Actress",
+      image : "https://d.newsweek.com/en/full/1555350/newsweek-conversations-leslie-grossman.jpg",
+      time: "21:04"
+    },
+    {
+      title: "Newsweek Conversations with Actor Willem Dafoe",
+      image : "https://d.newsweek.com/en/full/1555351/newsweek-conversations-willem-dafoe.jpg",
+      time: "20:49"
+    },
+    {
+      title: "‘Stranger Things’ Star Matthew Modine On New Movie ‘Miss Virginia’",
+      image : "https://d.newsweek.com/en/full/1555352/newsweek-conversations-matthew-modine.jpg",
+      time: "17:39"
+    }
+  ];
+
+.newsweek-conversations-header
+  .newsweek-icon
+  .newsweek-conversations-title Newsweek Conversations
+.newsweek-conversations
+  .newsweek-conversation-top
+    .newsweek-conversation-top-image
+      img(src=newsweekConversationsTop.image, alt=newsweekConversationsTop.title)
+      .overlay-content
+        span
+    .newsweek-conversation-top-details
+      h3.newsweek-conversation-top-title= newsweekConversationsTop.title
+      p.newsweek-conversation-top-summary= newsweekConversationsTop.summary
+      time.newsweek-conversation-top-time= newsweekConversationsTop.time
+
+  .newsweek-conversation-rest
+    each $newsweekConversation in newsweekConversations
+      .newsweek-conversation
+        .newsweek-conversation-image
+          img(src=$newsweekConversation.image, alt=$newsweekConversation.title)
+          .overlayContent
+            span
+        .newsweek-conversation-details
+          .newsweek-conversation-title
+            h4= $newsweekConversation.title
+          .newsweek-conversation-time
+            time= $newsweekConversation.time

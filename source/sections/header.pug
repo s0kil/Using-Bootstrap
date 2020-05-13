@@ -1,0 +1,43 @@
+-
+  const navItems = [
+    "U.S.",
+    "World",
+    "Business",
+    "Tech & Science",
+    "Culture", "Newsgeek",
+    "Sports",
+    "Health",
+    "The Debate",
+    "Vantage"
+  ]
+  const lastNavItem = navItems.slice(-1)[0]
+
+div.page-header
+  header.page-header-top
+    .header-brand
+      a(href="/")
+        span
+          include ../assets/brand-logo.svg
+
+    .header-actions
+      a.header-action.header-singin(href="/") Sign In
+      a.header-action.header-subscribe(href="/") Subscribe
+        span.arrow
+          +iconGeneral("chevron-right")
+      span.menu-icon
+        +iconGeneral("menu")
+
+  nav.page-header-bottom
+    ul
+      each $navItem in navItems
+        li
+          a(href="/")= $navItem
+          if $navItem !== lastNavItem
+            span.nav-separator
+
+    form(action="/", method="post")
+      label(for="search")
+        img.icon.invisible(src="https://g.newsweek.com/www/images/icon-search-glass.svg", alt="Search Icon", onload="injectSVG(this)")
+      input#search(type="text", name="search", placeholder="Search")
+
+    .nav-corner-cutoff

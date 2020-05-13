@@ -1,0 +1,40 @@
+-
+  const latestNewsArticles = [
+    {
+      title: "Tennessee Base on Lockdown After Call Reporting",
+      image: "https://d.newsweek.com/en/full/1509873/newsweek-breaking-news.jpg"
+    },
+    {
+      title: "Russia's Putin Jokes Trump Should Visit Syria, Assad Says He Will Host Him",
+      image: "https://d.newsweek.com/en/full/1560362/syria-assad-russia-putin-cathedral-damascus.jpg"
+    },
+    {
+      title: "Is Weird Dimming a Sign This Star Is About to Explode?",
+      image: "https://d.newsweek.com/en/full/1560404/betelgueses-surface.jpg"
+    },
+    {
+      title: "Andrew Yang Won't Rule Out Being Vice President to Another Candidate",
+      image: "https://d.newsweek.com/en/full/1560382/andrew-yang-vice-president-joe-biden.jpg"
+    },
+    {
+      title: "Former CIA Officer Says Trump Didn't 'Recognize The Most Important Threats'",
+      image: "https://d.newsweek.com/en/full/1560387/donald-trump.jpg"
+    },
+    {
+      title: "California Man Tries Invading Home Through Dog Door",
+      image: "https://d.newsweek.com/en/full/1560373/leroy-vance.jpg"
+    },
+    {
+      title: "Black Voters Say They Could Vote for Bernie Sanders in 2020 Election",
+      image: "https://d.newsweek.com/en/full/1560344/bernie-sanders-holds-town-hall-iowa.jpg"
+    }
+  ]
+
+h2.latest-news-title Latest News
+.latest-news
+  each $latestNewsArticle in latestNewsArticles
+    .latest-news-article
+      .latest-news-article-image
+        img(src=$latestNewsArticle.image, alt=$latestNewsArticle.title)
+      .latest-news-article-title
+        p= $latestNewsArticle.title

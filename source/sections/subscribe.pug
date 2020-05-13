@@ -1,0 +1,18 @@
+-
+  const subscribeImages = [
+    "https://d.newsweek.com/en/full/1582633/may-01-2020-cover.jpg",
+    "https://d.newsweek.com/en/full/1585087/may-08-15-2020-cover.jpg"
+  ]
+
+.subscribe-title Subscribe
+.subscribe
+  .card-wrapper
+    .subscribe-images
+      for $image in subscribeImages
+        .subscribe-image
+          img(src=$image, alt="Subscribe Cover Image")
+    .card-body-wrapper
+      .subscribe-body
+        h3 In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+        p All Access + Weekly Delivery. Choose A Membership That's Perfect for You!
+        a(href="https://subscription.newsweek.com/subscribe") Subscribe

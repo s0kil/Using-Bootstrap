@@ -1,0 +1,175 @@
+.page-header-top {
+  @extend .position-relative;
+  @extend .pt-lg-4;
+  @extend .pb-lg-3;
+  @extend .pl-lg-3;
+  @extend .pr-lg-3;
+  @extend .d-flex;
+  @extend .pl-2;
+  @extend .pr-2;
+  @extend .pb-2;
+  @extend .pt-2;
+
+  background: $red;
+}
+
+.header-brand {
+  @extend .justify-content-lg-center;
+  @extend .col-lg-12;
+  @extend .col-6;
+
+  max-height: 60px;
+
+  span {
+    height: 20px;
+    width: 132px;
+  }
+
+  svg {
+    display: block;
+    fill: $white;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.header-actions {
+  // TODO: Rethink This
+  @extend .justify-content-end;
+  @extend .align-items-center;
+  @extend .d-lg-block;
+  @extend .col-xl-2;
+  @extend .col-lg-3;
+  @extend .d-flex;
+  @extend .col-6;
+  @extend .p-0;
+
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.header-singin {
+  @extend .font-roboto;
+  @extend .font-medium;
+  @extend .font-bold;
+  @extend .font-14;
+
+  color: $white;
+  margin-right: 0.2rem;
+  text-transform: uppercase;
+}
+
+.header-subscribe {
+  @extend .font-roboto;
+  @extend .font-medium;
+  @extend .font-bold;
+  @extend .font-14;
+
+  background: $white;
+  color: $red;
+  padding: 0.2em;
+  text-transform: uppercase;
+
+  .arrow {
+    @extend .d-sm-inline;
+    @extend .d-none;
+  }
+}
+
+.menu-icon {
+  @extend .d-lg-none;
+  @extend .m-1;
+
+  color: #fb9a94;
+
+  svg {
+    $size: 34px;
+
+    height: $size;
+    width: $size;
+  }
+}
+
+.page-header-bottom {
+  @extend .position-relative;
+  @extend .d-lg-flex;
+  @extend .d-none;
+
+  background: $white;
+  border-bottom-color: $light-gray;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+
+  ul {
+    @extend .flex-grow-1;
+    @extend .nav-fill;
+    @extend .pt-3;
+    @extend .pb-3;
+    @extend .nav;
+
+    li {
+      @extend .nav-item;
+      @extend .border-0;
+
+      a {
+        @extend .font-bold;
+        @extend .nav-link;
+        @extend .p-0;
+
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  form {
+    @extend .position-relative;
+
+    margin-right: 80px;
+
+    input {
+      border: 0;
+      height: 54px;
+      height: 100%;
+      outline: none;
+      width: 90px;
+    }
+
+    label {
+      @extend .position-absolute;
+
+      right: 0;
+      top: 15px;
+
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+}
+
+.nav-separator {
+  @extend .d-flex;
+
+  align-self: center;
+  border-left: 1px solid $dark-gray;
+  height: 24px;
+}
+
+.nav-corner-cutoff {
+  @extend .position-absolute;
+
+  background: $red;
+  border-left: 12px solid $white;
+  border-top: 13px solid $red;
+  height: 13px;
+  right: 0;
+  width: 78px;
+}

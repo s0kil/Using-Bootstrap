@@ -1,0 +1,19 @@
+.overlay-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  color: #f72210;
+  font: bold 17px/16px 'Roboto Condensed', sans-serif;
+  left: 0;
+  padding: 8px 15px 9px;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.section-separator {
+  @extend .mb-3;
+
+  background-color: #d9d9d9;
+  height: 1px;
+  width: 100%;
+}

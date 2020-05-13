@@ -1,0 +1,55 @@
+.featured-slideshows-header {
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  @extend .d-flex;
+  @extend .pb-3;
+  @extend .pt-4;
+}
+
+.featured-slideshows-title {
+  @extend .section-title;
+  @extend .ml-2;
+  @extend .pb-0;
+}
+
+.featured-slideshows {
+  @extend .row;
+}
+
+.featured-slideshow {
+  @extend .pb-5;
+  @extend .col-md-4;
+}
+
+.featured-slideshow-image {
+  @extend .position-relative;
+  @extend .mb-4;
+
+  img {
+    @extend .img-fluid;
+  }
+}
+
+.featured-slideshow-title {
+  h4 {
+    @extend .font-18;
+  }
+}
+
+.slideshow-count {
+  background:
+    url('https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png')
+    0 0 / contain no-repeat;
+  bottom: 0;
+  color: #e9212e;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  height: 52px;
+  left: 0;
+  line-height: 58px;
+  position: absolute;
+  text-align: center;
+  text-indent: 5px;
+  width: 70px;
+}

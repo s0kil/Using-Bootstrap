@@ -1,0 +1,72 @@
+-
+  const footerEditions = [
+    "U.S Edition",
+    "日本",
+    "Pakistan",
+    "Polska",
+    "România"
+  ]
+
+  const footerSiteMap = [
+    "About Us",
+    "Corrections",
+    "Contact Us",
+    "Editorial Guidelines",
+    "Advertise",
+    "Copyright",
+    "Terms & Conditions",
+    "Privacy Policy",
+    "Cookie Policy",
+    "Terms of Sale",
+    "Archive",
+    "Announcements",
+    "Consent preferences"
+  ]
+
+  const footerSocialPages = [
+    {
+      name: "facebook",
+      link: "https://www.facebook.com/Newsweek"
+    },
+    {
+      name: "twitter",
+      link: "https://twitter.com/Newsweek"
+    },
+    {
+      name: "instagram",
+      link: "https://instagram.com/newsweek"
+    },
+    {
+      name: "tumblr",
+      link: "https://newsweekscience.tumblr.com"
+    },
+    {
+      name: "linkedin",
+      link: "https://www.linkedin.com/company/newsweek"
+    }
+  ]
+
+footer.footer
+  .footer-border
+  .footer-logo
+    include ../assets/brand-logo.svg
+  .footer-copyright
+    span &copy; 2020 Newsweek
+  .footer-social-icons
+    each $socialPage in footerSocialPages
+      .footer-social-icon
+        a(target="_blank", href=$socialPage.link)
+          +iconSocial($socialPage.name)
+  .footer-seperator
+
+.footer-links
+  .footer-editions
+    // TODO: Refactor Below
+    .col-1.pr-0
+      strong.mt-1.d-block Editions:
+    .col-8.pl-0
+      for $footerEdition in footerEditions
+        p.pr-3.mt-1.mb-1.d-inline-block= $footerEdition
+  .footer-sitemap
+    for $siteLink in footerSiteMap
+      p= $siteLink

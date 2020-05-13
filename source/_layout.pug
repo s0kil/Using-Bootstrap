@@ -1,0 +1,69 @@
+<!-- The (_layout.pug, _layout.scss) files define
+layout restrictions for each individual section (grid area) -->
+
+//- Icons
+include partials/icons
+
+//- Preprocessor Mixins For Reusable Sections
+include partials/mixins
+
+//- Header
+include sections/header
+
+//- Main Layout
+main.container-fluid.pt-4
+  //- Top Story
+  section(style={"grid-area": "top-story"})
+    include sections/top-story
+
+  //- More Stories
+  section(style={"grid-area": "more-stories"})
+    include sections/more-stories
+
+  //- Culture & Travel
+  section(style={"grid-area": "culture-travel"})
+    include sections/culture-travel
+
+  //- Featured Stories
+  section(style={"grid-area": "featured-stories"})
+    include sections/featured-stories
+
+  //- Opinion
+  section(style={"grid-area": "opinion"})
+    include sections/opinion
+
+  //- Latest News
+  section(style={"grid-area": "latest-news"})
+    include sections/latest-news
+
+  //- Newsletter Sign-Up
+  section(style={"grid-area": "newsletter-sign-up"})
+    include sections/newsletter-sign-up
+
+  //- In The Magazine
+  section(style={"grid-area": "in-the-magazine"})
+    include sections/in-the-magazine
+
+  //- Newsweek Conversations
+  section(style={"grid-area": "newsweek-conversations"})
+    include sections/newsweek-conversations
+
+  //- Editors Pick
+  section(style={"grid-area": "editors-pick"})
+    include sections/editors-pick
+
+  //- Featured Slideshows
+  section(style={"grid-area": "featured-slideshows"})
+    include sections/featured-slideshows
+
+  //- Subscribe & Newsletter
+  //- TODO: Rethink & Refactor
+  section(style={"grid-area": "subscribe-newsletter"})
+    .row
+      .col-lg-7
+        include sections/subscribe
+      .col-lg-5
+        include sections/newsletter
+
+//- Footer
+include sections/footer

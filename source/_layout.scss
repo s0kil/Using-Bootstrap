@@ -1,0 +1,75 @@
+// Header
+@import "sections/header";
+
+// Sections
+@import "sections/opinion";
+@import "sections/top-story";
+@import "sections/subscribe";
+@import "sections/newsletter";
+@import "sections/latest-news";
+@import "sections/more-stories";
+@import "sections/editors-pick";
+@import "sections/culture-travel";
+@import "sections/in-the-magazine";
+@import "sections/featured-stories";
+@import "sections/newsletter-sign-up";
+@import "sections/featured-slideshows";
+@import "sections/newsweek-conversations";
+
+body {
+  margin: auto;
+  max-width: 1310px;
+}
+
+main {
+  background: white;
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    // Respecting HTML Element (Sections) Order
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: repeat(10, minmax(100px, auto));
+    grid-template-areas:
+      "featured-stories top-story"
+      "featured-stories culture-travel"
+      "featured-stories more-stories"
+      "opinion opinion"
+      "latest-news latest-news"
+      "newsletter-sign-up newsletter-sign-up"
+      "in-the-magazine in-the-magazine"
+      "newsweek-conversations newsweek-conversations"
+      "editors-pick editors-pick"
+      "featured-slideshows featured-slideshows"
+      "subscribe-newsletter subscribe-newsletter";
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(10, minmax(100px, auto));
+    grid-template-areas:
+      "featured-stories top-story opinion"
+      "featured-stories culture-travel opinion"
+      "featured-stories culture-travel latest-news"
+      "featured-stories more-stories newsletter-sign-up"
+      "in-the-magazine in-the-magazine in-the-magazine"
+      "newsweek-conversations newsweek-conversations newsweek-conversations"
+      "editors-pick editors-pick editors-pick"
+      "featured-slideshows featured-slideshows featured-slideshows"
+      "subscribe-newsletter subscribe-newsletter subscribe-newsletter";
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+  }
+}
+
+// Footer
+@import "sections/footer";

@@ -1,0 +1,64 @@
+-
+  const moreStories = [
+    {
+      image: "https://d.newsweek.com/en/full/1559995/john-bolton-media-conference-kiev-ukraine.jpg",
+      title: "Bolton Could Provide 'Smoking Gun' Evidence in Trump's Impeachment Trial",
+      summary: "\"Next to Donald Trump himself, this could be the most important witness that the Senate could call to determine what the actual facts are,\" a former Watergate prosecutor said."
+    },
+    {
+      image: "https://d.newsweek.com/en/full/1560038/syria-iran-protest-soleimani-death.jpg",
+      title: "Syria Joins Iran to Call for U.S. Exit From Middle East After Iraq Vote",
+      summary: "Syria's prime minister said that \"the presence of Americans in Syria is a sign of occupation, and we believe that all nations and governments must stand up for their unlawful presence in the region.\""
+    },
+    {
+      image: "https://d.newsweek.com/en/full/1559924/iraq-iran-ain-al-asad-air-base-military.jpg",
+      title: "U.S. Soldier at Base Hit by Iran Says Troops Were 'Beyond Lucky'",
+      summary: "The Ain al-Asad air base in Iraq's western Anbar province was one of two military facilities hit by Iranian ballistic missiles last week."
+    },
+    {
+      image: "https://d.newsweek.com/en/full/1546954/stephen-miller-leaked-emails-2016.jpg",
+      title: "Stephen Miller Warned of Illegal Immigrants Replacing U.S. Workers in Emails",
+      summary: "Stephen Miller railed against Republicans he saw as too weak on immigration and suggested Deferred Action for Childhood Arrivals (DACA) recipients would one day replace white Americans, leaked emails to Breitbart News between 2015 and 2016 show."
+    },
+    {
+      image: "https://d.newsweek.com/en/full/1559973/canada-iran-plane-crash-missile-compensation.jpg",
+      title: "Iran Could Pay More for Downed Plane Than U.S. Did in 1988: Expert",
+      summary: "Canada, Ukraine and the U.S. have all demanded that Tehran pay compensation to the families of those killed when Ukraine International Airlines flight 752 was shot down last week."
+    },
+    {
+      image: "https://d.newsweek.com/en/full/1559931/border-wall.jpg",
+      title: "Trump to Draw Another $7.2 Billion From Military for Border Wall: Report",
+      summary: "Democratic Senator Patrick Leahy branded the bid \"an unconstitutional waste of money.\""
+    },
+    {
+      image: "https://d.newsweek.com/en/full/1559904/painting-children-school-learning-paint-stock-getty.jpg",
+      title: "Child IQ in the U.S. Lowered by Exposure to Flame Retardants, Pesticides",
+      summary: "Exposures to toxic chemicals \"represent a formidable risk to Americans' physical, mental, and economic health,\" said Abigail Gaylord of NYU Langone."
+    },
+    {
+      image: "https://d.newsweek.com/en/full/1560062/james-bond-billie-eilish.jpg",
+      title: "Billie Eilish Becomes Youngest Artist to Write and Record a Bond Theme Song",
+      summary: "American singer-songwriter sensation has written the song with her brother Finneas for the film which is released in April 2020"
+    },
+    {
+      image: "https://d.newsweek.com/en/full/1559962/former-national-security-adviser-john-bolton.jpg",
+      title: "Two-Thirds of Americans Want to Hear Bolton Testify at Impeachment Trial",
+      summary: "The poll by Quinnipiac University also found just under four in 10 Republicans wanted the former national security adviser to appear before lawmakers at the trial."
+    },
+    {
+      image: "https://d.newsweek.com/en/full/1559966/iran-victims.jpg",
+      title: "Canada to Host International Meeting on Iran Plane Downing",
+      summary: "Canada, Ukraine, Sweden, Afghanistan and Britain are expected to meet to discuss an investigation into the incident."
+    }
+  ]
+
+h2.more-stories-title More Stories
+.more-stories
+  each $story in moreStories
+    article.more-story
+      .more-story-image
+        img(src=$story.image, alt=$story.title)
+      .more-story-title
+        h5= $story.title
+      .more-story-summary
+        p= $story.summary
